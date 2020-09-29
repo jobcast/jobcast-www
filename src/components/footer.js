@@ -98,7 +98,14 @@ const Footer = () => {
         </div>
 
         <div className="footer-top pull-right text-center">
-          <a href="#topline" className="pointer">
+          <a
+            href="#topline"
+            className="pointer"
+            onClick={e =>
+              e.preventDefault() ||
+              window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+            }
+          >
             Back to top
           </a>
         </div>

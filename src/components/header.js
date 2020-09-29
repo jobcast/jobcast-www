@@ -6,8 +6,8 @@ const Header = () => {
   const [navActive, setNavActive] = useState(false)
 
   return (
-    <header className="header clear" role="banner" id="topline">
-      {/* use this instead for home page <header className="header clear margin-0" role="banner" id="topline"> */}
+    <header className="header clear" role="banner">
+      {/* use this instead for home page <header className="header clear margin-0" role="banner"> */}
       <div className="wrapper">
         <div className="logo">
           <Link to="/">
