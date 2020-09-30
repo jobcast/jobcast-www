@@ -16,6 +16,8 @@ import calloutIntegration from './images/calloutIntegration.jpg'
 import calloutLanguages from './images/calloutLanguages.jpg'
 import calloutReports from './images/calloutReports.jpg'
 
+import './styles.css'
+
 const IndexPage = () => {
   return (
     <Layout full={true}>

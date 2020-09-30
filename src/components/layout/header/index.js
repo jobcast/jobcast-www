@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import logo from './images/logo.png'
 
+import './styles.css'
+
 const Header = ({ headerClass }) => {
   const [navActive, setNavActive] = useState(false)
 

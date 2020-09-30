@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../../components/layout'
 
+import './styles.css'
+
 const PlansPage = () => {
   return (
     <Layout title="Pricing">

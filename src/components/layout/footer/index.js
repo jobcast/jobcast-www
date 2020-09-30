@@ -5,6 +5,8 @@ import socialTwitter from './images/socialTwitter.svg'
 import socialFacebook from './images/socialFacebook.svg'
 import socialYouTube from './images/socialYouTube.svg'
 
+import './styles.css'
+
 const Footer = ({ footerClass }) => {
   return (
     <footer

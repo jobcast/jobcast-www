@@ -1,0 +1,33 @@
+.plan-wrapper {
+  border: 1px solid #d5d5d5;
+}
+.plan-title {
+  background: #0db9d7;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.plan-body {
+  color: #7d7d7d;
+  font-weight: bold;
+  padding: 30px;
+}
+.plan-price {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .plan-wrapper {
+    margin-bottom: 15px;
+  }
+  .plan-title {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .plan-body {
+    padding: 15px;
+  }
+}
