@@ -1,12 +1,18 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import socialLinkedIn from '../assets/images/socialLinkedIn.svg'
 import socialTwitter from '../assets/images/socialTwitter.svg'
 import socialFacebook from '../assets/images/socialFacebook.svg'
 import socialYouTube from '../assets/images/socialYouTube.svg'
 
-const Footer = () => {
+const Footer = ({ footerClass }) => {
   return (
-    <footer className="footer clear xs-ph15" role="contentinfo">
+    <footer
+      className={`footer clear xs-ph15 ${
+        footerClass ? footerClass : ''
+      }`}
+      role="contentinfo"
+    >
       {/* use this instead of home page <footer className="footer clear margin-0 xs-p15" role="contentinfo"> */}
       <div className="wrapper">
         <div className="footer-social">

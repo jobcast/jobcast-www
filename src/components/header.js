@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import logo from '../assets/images/logo.png'
 
-const Header = () => {
+const Header = ({ headerClass }) => {
   const [navActive, setNavActive] = useState(false)
 
   return (
-    <header className="header clear" role="banner">
+    <header
+      className={`header clear ${headerClass ? headerClass : ''}`}
+      role="banner"
+    >
       {/* use this instead for home page <header className="header clear margin-0" role="banner"> */}
       <div className="wrapper">
         <div className="logo">

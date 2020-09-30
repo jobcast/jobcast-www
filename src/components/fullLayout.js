@@ -3,14 +3,14 @@ import Header from './header'
 import Footer from './footer'
 import '../assets/css/styles.css'
 
-const Layout = ({ children }) => {
+const FullLayout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Header headerClass="margin-0" />
       {children}
-      <Footer />
+      <Footer footerClass="margin-0" />
     </>
   )
 }
 
-export default Layout
+export default FullLayout
