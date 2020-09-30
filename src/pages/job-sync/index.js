@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import FixedLayout from '../../components/fixedLayout'
+import Layout from '../../components/layout'
 import jobSync from './images/job-sync.jpg'
 
 const JobSyncPage = () => {
   return (
-    <FixedLayout title="Job Sync">
+    <Layout title="Job Sync">
       <p>
         Job Sync creates a seamless job application process both for
         you and job seekers by connecting your ATS with Jobcast.
@@ -70,7 +70,7 @@ const JobSyncPage = () => {
         our in-app Live Chat or email us at{' '}
         <a href="mailto:info@jobcast.net">info@jobcast.net</a>.
       </p>
-    </FixedLayout>
+    </Layout>
   )
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
-import FixedLayout from '../../components/fixedLayout'
+import Layout from '../../components/layout'
 
 const PlansPage = () => {
   return (
-    <FixedLayout title="Pricing">
+    <Layout title="Pricing">
       <h2>Honest prices, no surprises.</h2>
       <p>
         Please enjoy our new and improved pricing to better match with
@@ -94,7 +94,7 @@ const PlansPage = () => {
           </a>
         </div>
       </div>
-    </FixedLayout>
+    </Layout>
   )
 }
 

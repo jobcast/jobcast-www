@@ -1,8 +1,8 @@
 import React from 'react'
-import FixedLayout from '../../components/fixedLayout'
+import Layout from '../../components/layout'
 
 const FaqPage = () => {
-  return <FixedLayout title="Jobcast FAQ"></FixedLayout>
+  return <Layout title="Jobcast FAQ"></Layout>
 }
 
 export default FaqPage

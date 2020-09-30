@@ -1,8 +1,8 @@
 import React from 'react'
-import FixedLayout from '../../components/fixedLayout'
+import Layout from '../../components/layout'
 
 const BlogPage = () => {
-  return <FixedLayout title="Blog"></FixedLayout>
+  return <Layout title="Blog"></Layout>
 }
 
 export default BlogPage

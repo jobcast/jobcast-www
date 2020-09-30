@@ -1,8 +1,8 @@
 import React from 'react'
-import FixedLayout from '../../components/fixedLayout'
+import Layout from '../../components/layout'
 
 const TermsPage = () => {
-  return <FixedLayout title="Terms"></FixedLayout>
+  return <Layout title="Terms"></Layout>
 }
 
 export default TermsPage

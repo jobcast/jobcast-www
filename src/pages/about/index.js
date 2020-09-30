@@ -1,10 +1,10 @@
 import React from 'react'
-import FixedLayout from '../../components/fixedLayout'
+import Layout from '../../components/layout'
 import founders from './images/founders.jpg'
 
 const AboutPage = () => {
   return (
-    <FixedLayout title="About">
+    <Layout title="About">
       <p>
         Jobcast is a Facebook Recruiting App that makes it possible
         for employers and recruiters to build fully branded career
@@ -58,7 +58,7 @@ const AboutPage = () => {
         candidate market, and to help their clients use Facebook to
         win the war for talent!
       </p>
-    </FixedLayout>
+    </Layout>
   )
 }
 

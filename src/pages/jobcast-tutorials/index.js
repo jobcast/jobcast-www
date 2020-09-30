@@ -1,8 +1,8 @@
 import React from 'react'
-import FixedLayout from '../../components/fixedLayout'
+import Layout from '../../components/layout'
 
 const TutorialsPage = () => {
-  return <FixedLayout title="Video Tutorials"></FixedLayout>
+  return <Layout title="Video Tutorials"></Layout>
 }
 
 export default TutorialsPage

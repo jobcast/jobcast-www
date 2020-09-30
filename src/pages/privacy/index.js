@@ -1,8 +1,8 @@
 import React from 'react'
-import FixedLayout from '../../components/fixedLayout'
+import Layout from '../../components/layout'
 
 const PrivacyPage = () => {
-  return <FixedLayout title="Privacy"></FixedLayout>
+  return <Layout title="Privacy"></Layout>
 }
 
 export default PrivacyPage

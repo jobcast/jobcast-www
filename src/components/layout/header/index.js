@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import logo from '../assets/images/logo.png'
+import logo from './images/logo.png'
 
 const Header = ({ headerClass }) => {
   const [navActive, setNavActive] = useState(false)

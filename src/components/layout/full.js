@@ -1,9 +1,8 @@
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
-import '../assets/css/styles.css'
 
-const FullLayout = ({ children }) => {
+const Full = ({ children }) => {
   return (
     <>
       <Header headerClass="margin-0" />
@@ -13,4 +12,4 @@ const FullLayout = ({ children }) => {
   )
 }
 
-export default FullLayout
+export default Full

@@ -1,5 +1,5 @@
 import React from 'react'
-import FullLayout from '../../components/fullLayout'
+import Layout from '../../components/layout'
 import mobile from './images/mobile.png'
 import quoteAlbert from './images/quoteAlbert.png'
 import homeLogo1 from './images/homeLogo1.png'
@@ -18,7 +18,7 @@ import calloutReports from './images/calloutReports.jpg'
 
 const IndexPage = () => {
   return (
-    <FullLayout>
+    <Layout full={true}>
       <div className="home-1 text-center">
         <div className="wrapper">
           <h1 className="home-title">
@@ -291,7 +291,7 @@ const IndexPage = () => {
           Get Started
         </a>
       </div>
-    </FullLayout>
+    </Layout>
   )
 }
 

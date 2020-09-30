@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import socialLinkedIn from '../assets/images/socialLinkedIn.svg'
-import socialTwitter from '../assets/images/socialTwitter.svg'
-import socialFacebook from '../assets/images/socialFacebook.svg'
-import socialYouTube from '../assets/images/socialYouTube.svg'
+import socialLinkedIn from './images/socialLinkedIn.svg'
+import socialTwitter from './images/socialTwitter.svg'
+import socialFacebook from './images/socialFacebook.svg'
+import socialYouTube from './images/socialYouTube.svg'
 
 const Footer = ({ footerClass }) => {
   return (

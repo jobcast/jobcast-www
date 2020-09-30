@@ -1,9 +1,8 @@
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
-import '../assets/css/styles.css'
 
-const FixedLayout = ({ children, title }) => {
+const Fixed = ({ children, title }) => {
   return (
     <>
       <Header />
@@ -21,4 +20,4 @@ const FixedLayout = ({ children, title }) => {
   )
 }
 
-export default FixedLayout
+export default Fixed
