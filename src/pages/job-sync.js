@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import FixedLayout from '../components/fixedLayout'
 import jobSync from '../assets/images/job-sync/job-sync.jpg'
 
@@ -61,12 +62,13 @@ const JobSyncPage = () => {
       <p>
         It is sometimes possible to use Job Sync when the above
         conditions are not met. Please{' '}
-        <a href="contact-us">contact us</a> for consultation.
+        <Link to="/contact-us">contact us</Link> for consultation.
       </p>
       <h2>Support:</h2>
       <p>
-        Questions? Contact us through your in-app Live Chat or email
-        us at <a href="mailto:info@jobcast.net">info@jobcast.net</a>.
+        Questions? <Link to="/contact-us">Contact us</Link> through
+        our in-app Live Chat or email us at{' '}
+        <a href="mailto:info@jobcast.net">info@jobcast.net</a>.
       </p>
     </FixedLayout>
   )
