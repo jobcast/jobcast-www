@@ -85,19 +85,19 @@ const Footer = ({ footerClass }) => {
         <div className="footer-nav">
           <ul>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about/">About</Link>
             </li>
             <li>
-              <Link to="/contact-us">Contact</Link>
+              <Link to="/contact-us/">Contact</Link>
             </li>
             <li>
-              <Link to="/jobcast-faq">FAQ</Link>
+              <Link to="/jobcast-faq/">FAQ</Link>
             </li>
             <li>
-              <Link to="/terms">Terms</Link>
+              <Link to="/terms/">Terms</Link>
             </li>
             <li>
-              <Link to="/privacy">Privacy</Link>
+              <Link to="/privacy/">Privacy</Link>
             </li>
             <li>
               <a href="https://app.jobcast.net/developer">API</a>

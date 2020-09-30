@@ -62,11 +62,11 @@ const JobSyncPage = () => {
       <p>
         It is sometimes possible to use Job Sync when the above
         conditions are not met. Please{' '}
-        <Link to="/contact-us">contact us</Link> for consultation.
+        <Link to="/contact-us/">contact us</Link> for consultation.
       </p>
       <h2>Support:</h2>
       <p>
-        Questions? <Link to="/contact-us">Contact us</Link> through
+        Questions? <Link to="/contact-us/">Contact us</Link> through
         our in-app Live Chat or email us at{' '}
         <a href="mailto:info@jobcast.net">info@jobcast.net</a>.
       </p>

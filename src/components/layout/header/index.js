@@ -50,16 +50,16 @@ const Header = ({ headerClass }) => {
               <a href="https://app.jobcast.net/dashboard/">Log In</a>
             </li>
             <li>
-              <Link to="/plans">Pricing</Link>
+              <Link to="/plans/">Pricing</Link>
             </li>
             <li>
-              <Link to="/job-sync">Job Sync</Link>
+              <Link to="/job-sync/">Job Sync</Link>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <Link to="/blog/">Blog</Link>
             </li>
             <li>
-              <Link to="/jobcast-tutorials">Tutorials</Link>
+              <Link to="/jobcast-tutorials/">Tutorials</Link>
             </li>
             <li>
               <a href="http://www.jobcast.net/category/resources/">
@@ -67,20 +67,20 @@ const Header = ({ headerClass }) => {
               </a>
             </li>
             <li className="visible-xs">
-              <Link to="/about">About</Link>
+              <Link to="/about/">About</Link>
             </li>
             <li className="visible-xs">
-              <Link to="/contact-us">Contact</Link>
+              <Link to="/contact-us/">Contact</Link>
             </li>
             <li className="visible-xs">
-              <Link to="/jobcast-faq">FAQ</Link>
+              <Link to="/jobcast-faq/">FAQ</Link>
             </li>
 
             <li className="visible-xs">
-              <Link to="/terms">Terms</Link>
+              <Link to="/terms/">Terms</Link>
             </li>
             <li className="visible-xs">
-              <Link to="/privacy">Privacy</Link>
+              <Link to="/privacy/">Privacy</Link>
             </li>
             <li className="visible-xs">
               <a href="https://app.jobcast.net/developer">API</a>
