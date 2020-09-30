@@ -1,6 +1,6 @@
 import React from 'react'
-import FixedLayout from '../components/fixedLayout'
-import founders from '../assets/images/about/founders.jpg'
+import FixedLayout from '../../components/fixedLayout'
+import founders from './images/founders.jpg'
 
 const AboutPage = () => {
   return (

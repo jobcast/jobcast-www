@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import FixedLayout from '../components/fixedLayout'
-import jobSync from '../assets/images/job-sync/job-sync.jpg'
+import FixedLayout from '../../components/fixedLayout'
+import jobSync from './images/job-sync.jpg'
 
 const JobSyncPage = () => {
   return (
