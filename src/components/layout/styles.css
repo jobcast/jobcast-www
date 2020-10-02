@@ -191,29 +191,6 @@ p {
   font-weight: bold;
 }
 
-.faq-section {
-  border-top: 1px solid #dbdbdb;
-  margin-top: 60px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.faq-title {
-  background-color: #e41f8f;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 15px;
-}
-.faq-img,
-.faq-smimg {
-  margin-bottom: 15px;
-  margin-top: 15px;
-  text-align: center;
-}
-.faq-img img {
-  width: 80%;
-  margin: 0 auto;
-}
-
 /* Wufoo & Mailchimp Customization */
 
 .wufoo-form iframe {
