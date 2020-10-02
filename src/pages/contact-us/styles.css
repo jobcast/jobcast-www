@@ -1,0 +1,8 @@
+.cf7-form input[type='text'],
+.cf7-form input[type='email'] {
+  min-height: 30px;
+  width: 100% !important;
+}
+.cf7-form textarea {
+  width: 100%;
+}
