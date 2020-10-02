@@ -6,7 +6,14 @@ import './styles.css'
 const ContactPage = () => {
   return (
     <Layout title="Contact">
-      <form action="" method="post">
+      <form
+        action="/contact-success/"
+        method="post"
+        name="contact"
+        data-netlify="true"
+      >
+        {/* The `form-name` hidden field is required to support form submissions in Netlify without JavaScript */}
+        <input type="hidden" name="form-name" value="contact" />
         <div className="cf7-form">
           <div className="clear margin-b15">
             <div className="col-xs-12 col-sm-6 padding-l0 xs-p0">
