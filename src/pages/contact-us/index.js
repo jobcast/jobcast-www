@@ -11,9 +11,16 @@ const ContactPage = () => {
         method="post"
         name="contact"
         data-netlify="true"
+        netlify-honeypot="bot-field"
       >
         {/* The `form-name` hidden field is required to support form submissions in Netlify without JavaScript */}
         <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you're human:{' '}
+            <input name="bot-field" />
+          </label>
+        </p>
         <div className="cf7-form">
           <div className="clear margin-b15">
             <div className="col-xs-12 col-sm-6 padding-l0 xs-p0">

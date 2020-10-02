@@ -426,6 +426,10 @@ p {
   width: 60%;
 }
 
+.hidden {
+  display: none;
+}
+
 .visible-xs {
   display: none;
 }
