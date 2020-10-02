@@ -24,6 +24,7 @@ const ContactPage = () => {
                   type="text"
                   name="name"
                   required="required"
+                  autoFocus="autofocus"
                   aria-required="true"
                   aria-invalid="false"
                 />
