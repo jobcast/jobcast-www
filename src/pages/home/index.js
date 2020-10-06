@@ -49,15 +49,16 @@ const IndexPage = () => {
 
       <div className="padding-0 padding-v30 text-center color-white wrapper relative xs-p15">
         <div className="margin-auto width-50 xs-w100">
-          <div style={{ width: '320px' }} className="wp-video">
-            <span className="mejs-offscreen">Video Player</span>
-            <div
-              id="mep_0"
-              className="mejs-container svg wp-video-shortcode mejs-video"
-              role="application"
-              aria-label="Video Player"
-              style={{ width: '320px', height: '180px' }}
-            ></div>
+          <div className="wp-video">
+            <iframe
+              title="Intro to Jobcast"
+              width="320"
+              height="240"
+              src="https://www.youtube.com/embed/9qFIOUpXst8"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
 
           <span className="text-18">
