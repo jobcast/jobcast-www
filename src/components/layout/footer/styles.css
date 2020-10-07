@@ -31,7 +31,7 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.footer-nav > ul > li.current_page_item > a,
+.footer-nav > ul > li > a.active,
 .footer-nav > ul > li > a:hover {
   color: #686868;
 }

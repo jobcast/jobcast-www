@@ -50,16 +50,24 @@ const Header = ({ headerClass }) => {
               <a href="https://app.jobcast.net/dashboard/">Log In</a>
             </li>
             <li>
-              <Link to="/plans/">Pricing</Link>
+              <Link to="/plans/" activeClassName="active">
+                Pricing
+              </Link>
             </li>
             <li>
-              <Link to="/job-sync/">Job Sync</Link>
+              <Link to="/job-sync/" activeClassName="active">
+                Job Sync
+              </Link>
             </li>
             <li>
-              <Link to="/blog/">Blog</Link>
+              <Link to="/blog/" activeClassName="active">
+                Blog
+              </Link>
             </li>
             <li>
-              <Link to="/jobcast-tutorials/">Tutorials</Link>
+              <Link to="/jobcast-tutorials/" activeClassName="active">
+                Tutorials
+              </Link>
             </li>
             <li>
               <a href="http://www.jobcast.net/category/resources/">
@@ -67,20 +75,30 @@ const Header = ({ headerClass }) => {
               </a>
             </li>
             <li className="visible-xs">
-              <Link to="/about/">About</Link>
+              <Link to="/about/" activeClassName="active">
+                About
+              </Link>
             </li>
             <li className="visible-xs">
-              <Link to="/contact-us/">Contact</Link>
+              <Link to="/contact-us/" activeClassName="active">
+                Contact
+              </Link>
             </li>
             <li className="visible-xs">
-              <Link to="/jobcast-faq/">FAQ</Link>
+              <Link to="/jobcast-faq/" activeClassName="active">
+                FAQ
+              </Link>
             </li>
 
             <li className="visible-xs">
-              <Link to="/terms/">Terms</Link>
+              <Link to="/terms/" activeClassName="active">
+                Terms
+              </Link>
             </li>
             <li className="visible-xs">
-              <Link to="/privacy/">Privacy</Link>
+              <Link to="/privacy/" activeClassName="active">
+                Privacy
+              </Link>
             </li>
             <li className="visible-xs">
               <a href="https://app.jobcast.net/developer">API</a>
