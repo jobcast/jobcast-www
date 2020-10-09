@@ -11,7 +11,7 @@ const Fixed = ({ children, title }) => {
           <section>
             <h1 className="page-title">{title}</h1>
             <hr className="margin-b30" />
-            <article>{children}</article>
+            <div>{children}</div>
           </section>
         </main>
       </div>
