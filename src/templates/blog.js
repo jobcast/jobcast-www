@@ -12,6 +12,12 @@ export const query = graphql`
       author {
         name
       }
+      heroImage {
+        title
+        file {
+          url
+        }
+      }
       body {
         json
       }
@@ -23,6 +29,13 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <article>
+        <img
+          className="aligncenter"
+          src={`${data.contentfulBlogPost.heroImage.file.url}?w=720`}
+          alt={data.contentfulBlogPost.heroImage.title}
+          srcset={`${data.contentfulBlogPost.heroImage.file.url}?w=720 720w, ${data.contentfulBlogPost.heroImage.file.url}?w=480 480w`}
+          sizes="(max-width: 600px) 480px, 720px"
+        />
         <div className="cate-title">
           <h1>{data.contentfulBlogPost.title}</h1>
         </div>
