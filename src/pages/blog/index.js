@@ -13,6 +13,12 @@ const BlogPage = () => {
             slug
             title
             publishDate(formatString: "MMMM D")
+            heroImage {
+              title
+              file {
+                url
+              }
+            }
           }
         }
       }
@@ -32,6 +38,15 @@ const BlogPage = () => {
               </h2>
             </div>
             <div className="cate-date">{node.publishDate}</div>
+            <div className="cate-thumb">
+              <Link to={`/${node.slug}/`} title={node.title}>
+                <img
+                  className="aligncenter"
+                  src={`${node.heroImage.file.url}?w=300&fit=thumb`}
+                  alt={node.heroImage.title}
+                />
+              </Link>
+            </div>
           </article>
         </div>
       ))}
