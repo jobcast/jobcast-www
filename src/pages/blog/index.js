@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import Truncate from 'react-truncate'
 import Layout from '../../components/layout'
 
 const BlogPage = () => {
@@ -18,6 +20,9 @@ const BlogPage = () => {
               file {
                 url
               }
+            }
+            body {
+              json
             }
           }
         }
@@ -47,6 +52,20 @@ const BlogPage = () => {
                 />
               </Link>
             </div>
+            {node.body && (
+              <p>
+                <Truncate lines={1} width={5000}>
+                  {documentToReactComponents(node.body.json)}
+                </Truncate>
+                <Link
+                  to={`/${node.slug}/`}
+                  title={node.title}
+                  className="view-article"
+                >
+                  Read More
+                </Link>
+              </p>
+            )}
           </article>
         </div>
       ))}
