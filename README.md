@@ -3,6 +3,7 @@ Static [Gatsby](https://www.gatsbyjs.com/) site generator for https://www.jobcas
 ## Setup
 * Create `.env.development` at root and populate environment variables:
 ```
+GATSBY_GRAPHQL_IDE=playground
 CONTENTFUL_SPACE_ID={value}
 CONTENTFUL_ACCESS_TOKEN={value}
 ```
