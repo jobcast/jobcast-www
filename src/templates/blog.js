@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { BLOCKS } from '@contentful/rich-text-types'
+import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../components/layout'
 
@@ -61,9 +61,48 @@ const Blog = ({ data }) => {
                   className="aligncenter"
                   alt={node.data.target.fields.title['en-US']}
                   src={node.data.target.fields.file['en-US'].url}
-                />
+                /> // by default, images don't get rendered
               ),
-            }, // by default, images don't get rendered
+              [INLINES.HYPERLINK]: node => {
+                if (node.data.uri.includes('youtube.com/embed'))
+                  // https://www.contentfulcommunity.com/t/embed-youtube-or-vimeo-video-directly-into-rich-text-content-type/2639/3
+                  return (
+                    <span
+                      style={{
+                        paddingBottom: '56.25%',
+                        position: 'relative',
+                        display: 'block',
+                        width: '100%',
+                      }}
+                    >
+                      <iframe
+                        style={{
+                          height: '100%',
+                          width: '100%',
+                          position: 'absolute',
+                          top: '0',
+                          left: '0',
+                        }}
+                        title={
+                          node.content.find(
+                            c => c.nodeType === 'text'
+                          ).value
+                        }
+                        src={node.data.uri}
+                        frameBorder="0"
+                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </span>
+                  )
+                else
+                  return (
+                    <a href={node.data.uri}>
+                      {node.content[0].value}
+                    </a>
+                  )
+              },
+            },
             renderText: text =>
               text
                 .split('\n')
