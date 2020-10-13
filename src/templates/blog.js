@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { BLOCKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../components/layout'
 
@@ -55,7 +56,7 @@ const Blog = ({ data }) => {
           data.contentfulBlogPost.body.json,
           {
             renderNode: {
-              'embedded-asset-block': node => (
+              [BLOCKS.EMBEDDED_ASSET]: node => (
                 <img
                   className="aligncenter"
                   alt={node.data.target.fields.title['en-US']}
