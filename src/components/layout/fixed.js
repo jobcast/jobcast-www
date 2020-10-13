@@ -9,8 +9,12 @@ const Fixed = ({ children, title }) => {
       <div className="wrapper main-wrapper">
         <main role="main" className="body-area">
           <section>
-            <h1 className="page-title">{title}</h1>
-            <hr className="margin-b30" />
+            {title && (
+              <>
+                <h1 className="page-title">{title}</h1>
+                <hr className="margin-b30" />
+              </>
+            )}
             <div>{children}</div>
           </section>
         </main>
