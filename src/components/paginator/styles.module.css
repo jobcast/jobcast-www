@@ -1,7 +1,0 @@
-.paginator {
-  overflow: hidden; /* so that floats are contained */
-}
-
-.next {
-  float: right;
-}
