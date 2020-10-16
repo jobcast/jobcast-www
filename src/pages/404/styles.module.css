@@ -1,0 +1,16 @@
+.container {
+  margin: 40px 0;
+}
+
+.heading {
+  font-size: 250%;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 200%;
+}
+
+.description {
+  margin: 20px 0 40px;
+}
