@@ -2,8 +2,10 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Truncate from 'react-truncate'
-import Layout from '../components/layout'
-import Paginator from '../components/paginator'
+import Layout from '../../components/layout'
+import Paginator from '../../components/paginator'
+
+import styles from './styles.module.css'
 
 // To access our context (limit, skip), we can't use useStaticQuery. Instead, we have to export our query.
 export const query = graphql`
@@ -40,15 +42,15 @@ const BlogList = ({ data, pageContext }) => {
       {data.allContentfulBlogPost.edges.map(({ node }) => (
         <div key={node.id} className="clear margin-b15">
           <article>
-            <div className="cate-title">
+            <div className={styles.title}>
               <h2>
                 <Link to={`/${node.slug}/`} title={node.title}>
                   {node.title}
                 </Link>
               </h2>
             </div>
-            <div className="cate-date">{node.publishDate}</div>
-            <div className="cate-thumb">
+            <div className={styles.date}>{node.publishDate}</div>
+            <div className={styles.thumb}>
               <Link to={`/${node.slug}/`} title={node.title}>
                 <img
                   className="aligncenter"
@@ -65,7 +67,7 @@ const BlogList = ({ data, pageContext }) => {
                 <Link
                   to={`/${node.slug}/`}
                   title={node.title}
-                  className="view-article"
+                  className={styles.readMore}
                 >
                   Read More
                 </Link>

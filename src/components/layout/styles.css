@@ -136,56 +136,6 @@ p {
   text-transform: uppercase;
 }
 
-.cate-thumb {
-  float: right;
-  margin: 0 0 15px 15px;
-  width: 350px;
-}
-.cate-title {
-  background: #00b5d5;
-  color: #ffffff;
-  padding: 5px 10px;
-}
-.cate-title a {
-  display: block;
-  height: 100%;
-  color: #ffffff;
-  width: 100%;
-}
-.cate-title h1,
-.cate-title h2,
-.cate-title h3 {
-  margin: 0;
-}
-.cate-date {
-  background: #66cfe3;
-  color: #ffffff;
-  font-weight: bold;
-  margin: 0 0 15px 0;
-  padding: 5px 10px;
-}
-.cate-date a {
-  color: #ffffff;
-}
-.view-article {
-  background: #e41f8f;
-  border-radius: 5px;
-  color: #ffffff;
-  display: inline-block;
-  float: right;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 15px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  vertical-align: middle;
-}
-.view-article:hover {
-  color: #ffffff;
-  background: #cf0d7b;
-}
-
 .redirect-notice {
   font-size: 24px;
   font-weight: bold;
