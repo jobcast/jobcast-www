@@ -5,7 +5,7 @@ import jobSync from './images/job-sync.jpg'
 
 const JobSyncPage = () => {
   return (
-    <Layout title="Job Sync">
+    <Layout heading="Job Sync">
       <p>
         Job Sync creates a seamless job application process both for
         you and job seekers by connecting your ATS with Jobcast.

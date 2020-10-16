@@ -5,7 +5,7 @@ import './styles.css'
 
 const PlansPage = () => {
   return (
-    <Layout title="Pricing">
+    <Layout heading="Pricing">
       <h2>Honest prices, no surprises.</h2>
       <p>
         Please enjoy our new and improved pricing to better match with

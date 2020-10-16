@@ -2,16 +2,16 @@ import React from 'react'
 import Header from './header'
 import Footer from './footer'
 
-const Fixed = ({ children, title }) => {
+const Fixed = ({ children, heading }) => {
   return (
     <>
       <Header />
       <div className="wrapper main-wrapper">
         <main role="main" className="body-area">
           <section>
-            {title && (
+            {heading && (
               <>
-                <h1 className="page-title">{title}</h1>
+                <h1 className="page-title">{heading}</h1>
                 <hr className="margin-b30" />
               </>
             )}

@@ -38,7 +38,7 @@ export const query = graphql`
 
 const BlogList = ({ data, pageContext }) => {
   return (
-    <Layout title="Blog">
+    <Layout heading="Blog">
       {data.allContentfulBlogPost.edges.map(({ node }) => (
         <div key={node.id} className="clear margin-b15">
           <article>

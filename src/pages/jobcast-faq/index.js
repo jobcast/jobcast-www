@@ -36,7 +36,7 @@ const FaqPage = () => {
   }
 
   return (
-    <Layout title="Jobcast FAQ">
+    <Layout heading="Jobcast FAQ">
       <p id="faq-top">
         Learn all you need to know about getting started with the
         Jobcast App with these tutorials and videos!

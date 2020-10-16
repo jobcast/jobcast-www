@@ -3,7 +3,7 @@ import Layout from '../../components/layout'
 
 const ContactSuccessPage = () => {
   return (
-    <Layout title="Success!">
+    <Layout heading="Success!">
       <h2 style={{ textAlign: 'center', marginTop: '0' }}>
         Thanks for your feedback!
       </h2>

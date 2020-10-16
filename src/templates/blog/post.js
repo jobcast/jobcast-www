@@ -30,7 +30,7 @@ export const query = graphql`
 
 const Blog = ({ data }) => {
   return (
-    <Layout>
+    <Layout title={data.contentfulBlogPost.title}>
       <article>
         <img
           className="aligncenter"

@@ -4,7 +4,7 @@ import Layout from '../../components/layout'
 
 const TermsPage = () => {
   return (
-    <Layout title="Terms">
+    <Layout heading="Terms">
       <p>
         Welcome to Jobcast.net the social recruiting service of
         Jobcast Media Inc. (“<strong>Jobcast</strong>”).{' '}

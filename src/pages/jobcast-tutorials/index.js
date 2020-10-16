@@ -3,7 +3,7 @@ import Layout from '../../components/layout'
 
 const TutorialsPage = () => {
   return (
-    <Layout title="Video Tutorials">
+    <Layout heading="Video Tutorials">
       <h2 style={{ textAlign: 'center' }}>Jobcast Branding</h2>
       <p style={{ textAlign: 'center', marginBottom: '30px' }}>
         <iframe

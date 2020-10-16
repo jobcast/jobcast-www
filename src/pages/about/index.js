@@ -4,7 +4,7 @@ import founders from './images/founders.jpg'
 
 const AboutPage = () => {
   return (
-    <Layout title="About">
+    <Layout heading="About">
       <p>
         Jobcast is a Facebook Recruiting App that makes it possible
         for employers and recruiters to build fully branded career

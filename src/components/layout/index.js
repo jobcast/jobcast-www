@@ -21,7 +21,9 @@ const Layout = props => {
     <>
       <Helmet>
         <title>
-          {props.title ? props.title + ' |' : ''}{' '}
+          {props.title || props.heading
+            ? (props.title || props.heading) + ' |'
+            : ''}{' '}
           {data.site.siteMetadata.title}
         </title>
       </Helmet>

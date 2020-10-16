@@ -7,7 +7,7 @@ import styles from './styles.module.css'
 
 const NotFoundPage = () => {
   return (
-    <Layout>
+    <Layout title="Page Not Found">
       <div className={`clear ${styles.container}`}>
         <div className="col-xs-12 col-sm-6 text-center">
           <div className={styles.heading}>Oops...</div>

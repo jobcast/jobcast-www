@@ -11,7 +11,7 @@ const ContactPage = () => {
   }, [])
 
   return (
-    <Layout title="Contact">
+    <Layout heading="Contact">
       <form
         action="/contact-success/"
         method="post"

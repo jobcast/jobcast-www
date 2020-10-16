@@ -3,7 +3,7 @@ import Layout from '../../components/layout'
 
 const PrivacyPage = () => {
   return (
-    <Layout title="Privacy">
+    <Layout heading="Privacy">
       <h1>Jobcast Privacy Policy</h1>
       <p>Effective Date: May 25, 2018</p>
       <p>
