@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Full from './full'
 import Fixed from './fixed'
+import './normalize.css'
 import './styles.css'
 
 const Layout = props => {
