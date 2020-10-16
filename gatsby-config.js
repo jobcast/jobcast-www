@@ -9,6 +9,13 @@ module.exports = {
     title: 'Jobcast Social Recruitment App',
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.jobcast.net`,
+      },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {

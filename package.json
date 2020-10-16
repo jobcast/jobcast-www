@@ -18,6 +18,7 @@
     "@contentful/rich-text-types": "^14.1.1",
     "gatsby": "^2.24.68",
     "gatsby-plugin-react-helmet": "^3.3.13",
+    "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
     "gatsby-source-contentful": "^2.3.51",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
