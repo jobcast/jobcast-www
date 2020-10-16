@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import Icons from './icons'
 import Full from './full'
 import Fixed from './fixed'
 import './normalize.css'
@@ -19,7 +20,27 @@ const Layout = props => {
 
   return (
     <>
+      <Icons />
       <Helmet>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+          name="msapplication-TileImage"
+          content="/icons/ms-icon-144x144.png"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:400,700"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <meta
+          name="description"
+          content="Jobcast - Build your own Branded Career Site on your Facebook Page with our Social Recruiting App."
+        />
+        <meta
+          name="keywords"
+          content="Recruiting, Social recruiting, ATS, applicant tracking, hr tech, social media"
+        />
         <title>
           {props.title || props.heading
             ? (props.title || props.heading) + ' |'
