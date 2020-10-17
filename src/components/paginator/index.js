@@ -13,6 +13,7 @@ const Paginator = ({ basePath, currentPage, totalPages }) => {
   const pages = []
 
   pages.push({
+    key: `page-prev`,
     link: linkTo(currentPage - 1),
     label: '«',
     className: currentPage === 1 ? 'disabled' : '',
@@ -22,6 +23,7 @@ const Paginator = ({ basePath, currentPage, totalPages }) => {
     Array.from({ length: totalPages }).forEach((_, i) => {
       const page = i + 1
       pages.push({
+        key: `page-${page}`,
         link: linkTo(page),
         label: page,
         className: currentPage === page ? 'active disabled' : '',
@@ -30,11 +32,13 @@ const Paginator = ({ basePath, currentPage, totalPages }) => {
   else {
     if (currentPage > 5) {
       pages.push({
+        key: `page-1`,
         link: linkTo(1),
         label: 1,
         className: 'pagination-d-none pagination-d-md-block',
       })
       pages.push({
+        key: `pages-left-hidden`,
         link: linkTo(1),
         label: '…',
         className: 'disabled pagination-d-none pagination-d-md-block',
@@ -51,6 +55,7 @@ const Paginator = ({ basePath, currentPage, totalPages }) => {
     )
     for (let page = startRange; page <= endRange; page++)
       pages.push({
+        key: `page-${page}`,
         link: linkTo(page),
         label: page,
         className:
@@ -63,11 +68,13 @@ const Paginator = ({ basePath, currentPage, totalPages }) => {
 
     if (currentPage < totalPages - 4) {
       pages.push({
+        key: `pages-right-hidden`,
         link: linkTo(totalPages),
         label: '…',
         className: 'disabled pagination-d-none pagination-d-md-block',
       })
       pages.push({
+        key: `page-${totalPages}`,
         link: linkTo(totalPages),
         label: totalPages,
         className: 'pagination-d-none pagination-d-md-block',
@@ -76,6 +83,7 @@ const Paginator = ({ basePath, currentPage, totalPages }) => {
   }
 
   pages.push({
+    key: `page-next`,
     link: linkTo(currentPage + 1),
     label: '»',
     className: currentPage === totalPages ? 'disabled' : '',
@@ -84,7 +92,7 @@ const Paginator = ({ basePath, currentPage, totalPages }) => {
   return (
     <ul className="pagination pagination-lg pagination-justify-content-center">
       {pages.map(p => (
-        <li className={`page-item ${p.className}`}>
+        <li key={p.key} className={`page-item ${p.className}`}>
           <Link to={p.link} className="page-link">
             {p.label}
           </Link>
