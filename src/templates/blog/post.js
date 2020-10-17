@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../../components/layout'
+import Sidebar from '../../components/sidebar'
 
 import styles from './styles.module.css'
 
@@ -113,7 +114,9 @@ const Blog = ({ data }) => {
             )}
           </article>
         </div>
-        <div className="col-xs-12 col-sm-4"></div>
+        <div className="col-xs-12 col-sm-4">
+          <Sidebar />
+        </div>
       </div>
     </Layout>
   )

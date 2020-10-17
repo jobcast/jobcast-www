@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Truncate from 'react-truncate'
 import Layout from '../../components/layout'
+import Sidebar from '../../components/sidebar'
 import Paginator from '../../components/paginator'
 import { Helmet } from 'react-helmet'
 
@@ -106,7 +107,9 @@ const BlogList = ({ data, pageContext }) => {
               </div>
             ))}
           </div>
-          <div className="col-xs-12 col-sm-4"></div>
+          <div className="col-xs-12 col-sm-4">
+            <Sidebar />
+          </div>
         </div>
         <Paginator
           basePath="/blog/"
