@@ -15,7 +15,7 @@ const Fixed = ({ children, heading }) => {
                 <hr className="margin-b30" />
               </>
             )}
-            <div>{children}</div>
+            <>{children}</>
           </section>
         </main>
       </div>

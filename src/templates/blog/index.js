@@ -65,43 +65,49 @@ const BlogList = ({ data, pageContext }) => {
         {next && <link rel="next" href={next} />}
       </Helmet>
       <Layout heading="Blog">
-        {data.allContentfulBlogPost.edges.map(({ node }) => (
-          <div key={node.id} className="clear margin-b15">
-            <article>
-              <div className={styles.title}>
-                <h2>
-                  <Link to={`/${node.slug}/`} title={node.title}>
-                    {node.title}
-                  </Link>
-                </h2>
+        <div className="clear">
+          <div className="col-xs-12 col-sm-8">
+            {data.allContentfulBlogPost.edges.map(({ node }) => (
+              <div key={node.id} className="clear margin-b15">
+                <article>
+                  <div className={styles.title}>
+                    <h2>
+                      <Link to={`/${node.slug}/`} title={node.title}>
+                        {node.title}
+                      </Link>
+                    </h2>
+                  </div>
+                  <div className={styles.date}>
+                    {node.publishDate}
+                  </div>
+                  <div className={styles.thumb}>
+                    <Link to={`/${node.slug}/`} title={node.title}>
+                      <img
+                        src={`${node.heroImage.file.url}?w=300&fit=thumb`}
+                        alt={node.heroImage.title}
+                      />
+                    </Link>
+                  </div>
+                  {node.body && (
+                    <div>
+                      <Truncate lines={1} width={5000}>
+                        {documentToReactComponents(node.body.json)}
+                      </Truncate>
+                      <Link
+                        to={`/${node.slug}/`}
+                        title={node.title}
+                        className={styles.readMore}
+                      >
+                        Read More
+                      </Link>
+                    </div>
+                  )}
+                </article>
               </div>
-              <div className={styles.date}>{node.publishDate}</div>
-              <div className={styles.thumb}>
-                <Link to={`/${node.slug}/`} title={node.title}>
-                  <img
-                    className="aligncenter"
-                    src={`${node.heroImage.file.url}?w=300&fit=thumb`}
-                    alt={node.heroImage.title}
-                  />
-                </Link>
-              </div>
-              {node.body && (
-                <div>
-                  <Truncate lines={1} width={5000}>
-                    {documentToReactComponents(node.body.json)}
-                  </Truncate>
-                  <Link
-                    to={`/${node.slug}/`}
-                    title={node.title}
-                    className={styles.readMore}
-                  >
-                    Read More
-                  </Link>
-                </div>
-              )}
-            </article>
+            ))}
           </div>
-        ))}
+          <div className="col-xs-12 col-sm-4"></div>
+        </div>
         <Paginator
           basePath="/blog/"
           currentPage={pageContext.currentPage}
