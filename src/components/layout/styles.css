@@ -411,6 +411,9 @@ p {
   .xs-mb15 {
     margin-bottom: 15px;
   }
+  .xs-mb70 {
+    margin-bottom: 70px;
+  }
   .xs-p0 {
     padding: 0;
   }
