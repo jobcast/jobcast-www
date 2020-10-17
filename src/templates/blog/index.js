@@ -67,7 +67,7 @@ const BlogList = ({ data, pageContext }) => {
       </Helmet>
       <Layout heading="Blog">
         <div className="clear">
-          <div className="col-xs-12 col-sm-8">
+          <div className="col-xs-12 col-sm-8 xs-mb70">
             {data.allContentfulBlogPost.edges.map(({ node }) => (
               <div key={node.id} className="clear margin-b15">
                 <article>

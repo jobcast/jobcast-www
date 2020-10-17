@@ -33,7 +33,7 @@ const Blog = ({ data }) => {
   return (
     <Layout title={data.contentfulBlogPost.title}>
       <div className="clear">
-        <div className="col-xs-12 col-sm-8">
+        <div className="col-xs-12 col-sm-8 xs-mb70">
           <article>
             <img
               className="aligncenter"
