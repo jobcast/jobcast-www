@@ -86,7 +86,7 @@ const BlogList = ({ data, pageContext }) => {
                 </Link>
               </div>
               {node.body && (
-                <p>
+                <div>
                   <Truncate lines={1} width={5000}>
                     {documentToReactComponents(node.body.json)}
                   </Truncate>
@@ -97,7 +97,7 @@ const BlogList = ({ data, pageContext }) => {
                   >
                     Read More
                   </Link>
-                </p>
+                </div>
               )}
             </article>
           </div>
