@@ -1,4 +1,5 @@
 import React from 'react'
+import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import twitter from './images/twitter.png'
 
 const Sidebar = () => {
@@ -21,6 +22,11 @@ const Sidebar = () => {
 
       <div>
         <div className="text-center">
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="jobcastnet"
+            options={{ height: 600 }}
+          />
           <div className="margin-v30">
             <a
               className="btn btn-info btn-small"
