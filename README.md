@@ -5,6 +5,7 @@ Static [Gatsby](https://www.gatsbyjs.com/) site generator for https://www.jobcas
 ```
 GATSBY_GRAPHQL_IDE=playground
 GOOGLE_TAGMANAGER_ID=
+INTERCOM_WORKSPACE_ID=
 CONTENTFUL_SPACE_ID={value}
 CONTENTFUL_ACCESS_TOKEN={value}
 ```
