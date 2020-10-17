@@ -106,16 +106,16 @@ const BlogList = ({ data, pageContext }) => {
                 </article>
               </div>
             ))}
+            <Paginator
+              basePath="/blog/"
+              currentPage={pageContext.currentPage}
+              totalPages={pageContext.totalPages}
+            />
           </div>
           <div className="col-xs-12 col-sm-4">
             <Sidebar />
           </div>
         </div>
-        <Paginator
-          basePath="/blog/"
-          currentPage={pageContext.currentPage}
-          totalPages={pageContext.totalPages}
-        />
       </Layout>
     </>
   )
