@@ -4,6 +4,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Truncate from 'react-truncate'
 import Layout from '../../components/layout'
 import Paginator from '../../components/paginator'
+import { Helmet } from 'react-helmet'
 
 import styles from './styles.module.css'
 
@@ -33,55 +34,81 @@ export const query = graphql`
         }
       }
     }
+    site {
+      siteMetadata {
+        url
+      }
+    }
   }
 `
 
 const BlogList = ({ data, pageContext }) => {
+  const prev =
+    pageContext.currentPage > 1
+      ? pageContext.currentPage === 2
+        ? `${data.site.siteMetadata.url}/blog/`
+        : `${data.site.siteMetadata.url}/blog/${
+            pageContext.currentPage - 1
+          }/`
+      : null
+
+  const next =
+    pageContext.currentPage < pageContext.totalPages
+      ? `${data.site.siteMetadata.url}/blog/${
+          pageContext.currentPage + 1
+        }/`
+      : null
   return (
-    <Layout heading="Blog">
-      {data.allContentfulBlogPost.edges.map(({ node }) => (
-        <div key={node.id} className="clear margin-b15">
-          <article>
-            <div className={styles.title}>
-              <h2>
+    <>
+      <Helmet>
+        {prev && <link rel="prev" href={prev} />}
+        {next && <link rel="next" href={next} />}
+      </Helmet>
+      <Layout heading="Blog">
+        {data.allContentfulBlogPost.edges.map(({ node }) => (
+          <div key={node.id} className="clear margin-b15">
+            <article>
+              <div className={styles.title}>
+                <h2>
+                  <Link to={`/${node.slug}/`} title={node.title}>
+                    {node.title}
+                  </Link>
+                </h2>
+              </div>
+              <div className={styles.date}>{node.publishDate}</div>
+              <div className={styles.thumb}>
                 <Link to={`/${node.slug}/`} title={node.title}>
-                  {node.title}
+                  <img
+                    className="aligncenter"
+                    src={`${node.heroImage.file.url}?w=300&fit=thumb`}
+                    alt={node.heroImage.title}
+                  />
                 </Link>
-              </h2>
-            </div>
-            <div className={styles.date}>{node.publishDate}</div>
-            <div className={styles.thumb}>
-              <Link to={`/${node.slug}/`} title={node.title}>
-                <img
-                  className="aligncenter"
-                  src={`${node.heroImage.file.url}?w=300&fit=thumb`}
-                  alt={node.heroImage.title}
-                />
-              </Link>
-            </div>
-            {node.body && (
-              <p>
-                <Truncate lines={1} width={5000}>
-                  {documentToReactComponents(node.body.json)}
-                </Truncate>
-                <Link
-                  to={`/${node.slug}/`}
-                  title={node.title}
-                  className={styles.readMore}
-                >
-                  Read More
-                </Link>
-              </p>
-            )}
-          </article>
-        </div>
-      ))}
-      <Paginator
-        basePath="/blog/"
-        currentPage={pageContext.currentPage}
-        totalPages={pageContext.totalPages}
-      />
-    </Layout>
+              </div>
+              {node.body && (
+                <p>
+                  <Truncate lines={1} width={5000}>
+                    {documentToReactComponents(node.body.json)}
+                  </Truncate>
+                  <Link
+                    to={`/${node.slug}/`}
+                    title={node.title}
+                    className={styles.readMore}
+                  >
+                    Read More
+                  </Link>
+                </p>
+              )}
+            </article>
+          </div>
+        ))}
+        <Paginator
+          basePath="/blog/"
+          currentPage={pageContext.currentPage}
+          totalPages={pageContext.totalPages}
+        />
+      </Layout>
+    </>
   )
 }
 

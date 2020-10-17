@@ -7,8 +7,16 @@
 module.exports = {
   siteMetadata: {
     title: 'Jobcast Social Recruitment App',
+    url: `https://www.jobcast.net`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.jobcast.net`,
+      },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {
