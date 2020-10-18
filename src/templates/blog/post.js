@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../../components/layout'
@@ -26,10 +26,23 @@ export const query = graphql`
         json
       }
     }
+    site {
+      siteMetadata {
+        url
+      }
+    }
   }
 `
 
 const Blog = ({ data }) => {
+  const siteMatchRegex = new RegExp(
+    '^' +
+      data.site.siteMetadata.url
+        .replace(/^https?/gi, 'https?')
+        .replaceAll('/', '\\/')
+        .replaceAll('.', '\\.')
+  )
+
   return (
     <Layout title={data.contentfulBlogPost.title}>
       <div className="clear">
@@ -99,8 +112,21 @@ const Blog = ({ data }) => {
                         </span>
                       )
                     else if (node.content.length)
-                      return (
-                        <a href={node.data.uri}>
+                      return siteMatchRegex.test(node.data.uri) ? (
+                        <Link
+                          to={node.data.uri.replace(
+                            siteMatchRegex,
+                            ''
+                          )}
+                        >
+                          {node.content[0].value}
+                        </Link>
+                      ) : (
+                        <a
+                          href={node.data.uri}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {node.content[0].value}
                         </a>
                       )
