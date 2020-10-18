@@ -98,7 +98,7 @@ const Blog = ({ data }) => {
                           ></iframe>
                         </span>
                       )
-                    else
+                    else if (node.content.length)
                       return (
                         <a href={node.data.uri}>
                           {node.content[0].value}
