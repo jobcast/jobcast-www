@@ -39,7 +39,7 @@ const Blog = ({ data }) => {
               className="aligncenter"
               src={`${data.contentfulBlogPost.heroImage.file.url}?w=720`}
               alt={data.contentfulBlogPost.heroImage.title}
-              srcset={`${data.contentfulBlogPost.heroImage.file.url}?w=720 720w, ${data.contentfulBlogPost.heroImage.file.url}?w=480 480w`}
+              srcSet={`${data.contentfulBlogPost.heroImage.file.url}?w=720 720w, ${data.contentfulBlogPost.heroImage.file.url}?w=480 480w`}
               sizes="(max-width: 600px) 480px, 720px"
             />
             <div className={styles.title}>
@@ -109,7 +109,10 @@ const Blog = ({ data }) => {
                 renderText: text =>
                   text
                     .split('\n')
-                    .flatMap((text, i) => [i > 0 && <br />, text]), // https://github.com/contentful/rich-text/issues/96#issuecomment-511100434
+                    .flatMap((text, i) => [
+                      i > 0 && <br key={`text-${i}`} />,
+                      text,
+                    ]), // https://github.com/contentful/rich-text/issues/96#issuecomment-511100434
               }
             )}
           </article>
