@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './header'
-import Footer from './footer'
+import Header from '../header'
+import Footer from '../footer'
 
-const Fixed = ({ children, heading }) => {
+const FixedLayout = ({ children, heading }) => {
   return (
     <>
       <Header />
@@ -24,4 +24,4 @@ const Fixed = ({ children, heading }) => {
   )
 }
 
-export default Fixed
+export default FixedLayout

@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Icons from './icons'
-import Full from './full'
-import Fixed from './fixed'
+import FullLayout from './full'
+import FixedLayout from './fixed'
 import './normalize.css'
 import './styles.css'
 
@@ -48,7 +48,11 @@ const Layout = props => {
           {data.site.siteMetadata.title}
         </title>
       </Helmet>
-      {props.full ? <Full {...props} /> : <Fixed {...props} />}
+      {props.full ? (
+        <FullLayout {...props} />
+      ) : (
+        <FixedLayout {...props} />
+      )}
     </>
   )
 }
