@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/layout'
+import Layout, { LayoutType } from '../../components/layout'
 import mobile from './images/mobile.png'
 import quoteAlbert from './images/quoteAlbert.png'
 import homeLogo1 from './images/homeLogo1.png'
@@ -20,7 +20,7 @@ import './styles.css'
 
 const IndexPage = () => {
   return (
-    <Layout full={true}>
+    <Layout type={LayoutType.FULL}>
       <div className="home-1 text-center">
         <div className="wrapper">
           <h1 className="home-title">

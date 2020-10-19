@@ -4,8 +4,15 @@ import { Helmet } from 'react-helmet'
 import Icons from './icons'
 import FullLayout from './full'
 import FixedLayout from './fixed'
+import SplitLayout from './split'
 import './normalize.css'
 import './styles.css'
+
+export const LayoutType = {
+  FULL: 'FULL',
+  FIXED: 'FIXED',
+  SPLIT: 'SPLIT',
+}
 
 const Layout = props => {
   const data = useStaticQuery(graphql`
@@ -48,11 +55,16 @@ const Layout = props => {
           {data.site.siteMetadata.title}
         </title>
       </Helmet>
-      {props.full ? (
-        <FullLayout {...props} />
-      ) : (
-        <FixedLayout {...props} />
-      )}
+      {(() => {
+        switch (props.type) {
+          case LayoutType.FULL:
+            return <FullLayout {...props} />
+          case LayoutType.SPLIT:
+            return <SplitLayout {...props} />
+          default:
+            return <FixedLayout {...props} />
+        }
+      })()}
     </>
   )
 }
