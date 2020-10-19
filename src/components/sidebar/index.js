@@ -1,8 +1,23 @@
 import React from 'react'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import twitter from './images/twitter.png'
 
 const Sidebar = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulBlogCategory(sort: { fields: name, order: ASC }) {
+        edges {
+          node {
+            id
+            slug
+            name
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div>
       <div>
@@ -54,64 +69,11 @@ const Sidebar = () => {
       <div className="widget_categories">
         <h3>Categories</h3>
         <ul>
-          <li>
-            <a href="http://www.jobcast.net/category/resources/case-studies/">
-              Case Studies
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/resources/client-stories/">
-              Client Stories
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/employer-branding/">
-              Employer Branding
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/facebook-recruiting-1/">
-              Facebook Recruiting
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/linklove/">
-              Link Love
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/updates/">
-              Product Updates
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/resources/">
-              Resources
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/social-recruiting/">
-              Social Recruiting
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/uncategorized/">
-              Uncategorized
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://www.jobcast.net/category/welcome-to-jobcast/"
-              title="How to get the most from the Jobcast App"
-            >
-              Welcome to Jobcast
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jobcast.net/category/resources/white-papers/">
-              White Papers
-            </a>
-          </li>
+          {data.allContentfulBlogCategory.edges.map(({ node }) => (
+            <li key={node.id}>
+              <Link to={`/${node.slug}/`}>{node.name}</Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
