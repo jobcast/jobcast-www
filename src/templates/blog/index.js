@@ -10,9 +10,14 @@ import styles from './styles.module.css'
 
 // To access our context (limit, skip), we can't use useStaticQuery. Instead, we have to export our query.
 export const query = graphql`
-  query($skip: Int!, $limit: Int!) {
+  query(
+    $skip: Int!
+    $limit: Int!
+    $filter: ContentfulBlogPostFilterInput
+  ) {
     allContentfulBlogPost(
       sort: { fields: publishDate, order: DESC }
+      filter: $filter
       skip: $skip
       limit: $limit
     ) {
@@ -46,15 +51,15 @@ const BlogList = ({ data, pageContext }) => {
   const prev =
     pageContext.currentPage > 1
       ? pageContext.currentPage === 2
-        ? `${data.site.siteMetadata.url}/blog/`
-        : `${data.site.siteMetadata.url}/blog/${
+        ? `${data.site.siteMetadata.url}${pageContext.basePath}`
+        : `${data.site.siteMetadata.url}${pageContext.basePath}${
             pageContext.currentPage - 1
           }/`
       : null
 
   const next =
     pageContext.currentPage < pageContext.totalPages
-      ? `${data.site.siteMetadata.url}/blog/${
+      ? `${data.site.siteMetadata.url}${pageContext.basePath}${
           pageContext.currentPage + 1
         }/`
       : null
@@ -64,7 +69,7 @@ const BlogList = ({ data, pageContext }) => {
         {prev && <link rel="prev" href={prev} />}
         {next && <link rel="next" href={next} />}
       </Helmet>
-      <Layout type={LayoutType.SPLIT} heading="Blog">
+      <Layout type={LayoutType.SPLIT} heading={pageContext.heading}>
         {data.allContentfulBlogPost.edges.map(({ node }) => (
           <div key={node.id} className="clear margin-b15">
             <article>
@@ -102,7 +107,7 @@ const BlogList = ({ data, pageContext }) => {
           </div>
         ))}
         <Paginator
-          basePath="/blog/"
+          basePath={pageContext.basePath}
           currentPage={pageContext.currentPage}
           totalPages={pageContext.totalPages}
         />
