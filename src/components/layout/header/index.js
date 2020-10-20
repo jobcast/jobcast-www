@@ -70,9 +70,12 @@ const Header = ({ headerClass }) => {
               </Link>
             </li>
             <li>
-              <a href="http://www.jobcast.net/category/resources/">
+              <Link
+                to="/category/resources/"
+                activeClassName="active"
+              >
                 Resources
-              </a>
+              </Link>
             </li>
             <li className="visible-xs">
               <Link to="/about/" activeClassName="active">
