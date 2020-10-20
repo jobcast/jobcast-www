@@ -269,7 +269,7 @@ const IndexPage = () => {
           </a>
 
           <a
-            href="/plans"
+            href="/plans/"
             className="btn btn-info text-uppercase margin-l15 xs-m0"
           >
             Learn More
