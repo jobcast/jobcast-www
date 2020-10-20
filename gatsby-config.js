@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Jobcast Social Recruitment App',
-    siteUrl: `https://www.jobcast.net`,
+    siteUrl: `https://jobcast-www.netlify.app`,
   },
   plugins: [
     {
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://www.jobcast.net`,
+        siteUrl: `https://jobcast-www.netlify.app`,
       },
     },
     {
