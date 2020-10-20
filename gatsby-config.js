@@ -23,6 +23,7 @@ module.exports = {
         appId: process.env.INTERCOM_WORKSPACE_ID,
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
