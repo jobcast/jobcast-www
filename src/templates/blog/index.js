@@ -41,7 +41,7 @@ export const query = graphql`
     }
     site {
       siteMetadata {
-        url
+        siteUrl
       }
     }
   }
@@ -51,17 +51,17 @@ const BlogList = ({ data, pageContext }) => {
   const prev =
     pageContext.currentPage > 1
       ? pageContext.currentPage === 2
-        ? `${data.site.siteMetadata.url}${pageContext.basePath}`
-        : `${data.site.siteMetadata.url}${pageContext.basePath}page/${
-            pageContext.currentPage - 1
-          }/`
+        ? `${data.site.siteMetadata.siteUrl}${pageContext.basePath}`
+        : `${data.site.siteMetadata.siteUrl}${
+            pageContext.basePath
+          }page/${pageContext.currentPage - 1}/`
       : null
 
   const next =
     pageContext.currentPage < pageContext.totalPages
-      ? `${data.site.siteMetadata.url}${pageContext.basePath}page/${
-          pageContext.currentPage + 1
-        }/`
+      ? `${data.site.siteMetadata.siteUrl}${
+          pageContext.basePath
+        }page/${pageContext.currentPage + 1}/`
       : null
   return (
     <>

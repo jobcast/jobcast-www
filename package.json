@@ -21,6 +21,7 @@
     "gatsby-plugin-intercom": "^0.1.4",
     "gatsby-plugin-react-helmet": "^3.3.13",
     "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
+    "gatsby-plugin-sitemap": "^2.4.17",
     "gatsby-source-contentful": "^2.3.51",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

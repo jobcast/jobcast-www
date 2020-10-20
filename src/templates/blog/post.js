@@ -27,7 +27,7 @@ export const query = graphql`
     }
     site {
       siteMetadata {
-        url
+        siteUrl
       }
     }
   }
@@ -36,7 +36,7 @@ export const query = graphql`
 const Blog = ({ data }) => {
   const siteMatchRegex = new RegExp(
     '^' +
-      data.site.siteMetadata.url
+      data.site.siteMetadata.siteUrl
         .replace(/^https?/gi, 'https?')
         .replace(/\//g, '\\/')
         .replace(/\./g, '\\.')
