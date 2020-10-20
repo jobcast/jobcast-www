@@ -16,6 +16,7 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
     "@contentful/rich-text-types": "^14.1.1",
+    "algoliasearch": "^4.5.1",
     "gatsby": "^2.24.68",
     "gatsby-plugin-google-tagmanager": "^2.3.16",
     "gatsby-plugin-intercom": "^0.1.4",
@@ -26,6 +27,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-instantsearch-dom": "^6.8.1",
     "react-truncate": "^2.4.0",
     "react-twitter-embed": "^3.0.3"
   },
