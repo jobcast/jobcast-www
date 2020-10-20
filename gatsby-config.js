@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Jobcast Social Recruitment App',
-    url: `https://www.jobcast.net`,
+    siteUrl: `https://www.jobcast.net`,
   },
   plugins: [
     {
