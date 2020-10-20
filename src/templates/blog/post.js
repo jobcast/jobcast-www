@@ -38,8 +38,8 @@ const Blog = ({ data }) => {
     '^' +
       data.site.siteMetadata.url
         .replace(/^https?/gi, 'https?')
-        .replaceAll('/', '\\/')
-        .replaceAll('.', '\\.')
+        .replace(/\//g, '\\/')
+        .replace(/\./g, '\\.')
   )
 
   return (
