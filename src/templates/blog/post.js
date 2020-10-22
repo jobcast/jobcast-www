@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout, { LayoutType } from '../../components/layout'
+import RelatedPosts from '../../components/related-posts'
 
 import styles from './styles.module.css'
 
@@ -33,7 +34,7 @@ export const query = graphql`
   }
 `
 
-const Post = ({ data }) => {
+const Post = ({ data, pageContext }) => {
   const siteMatchRegex = new RegExp(
     '^' +
       data.site.siteMetadata.siteUrl
@@ -139,6 +140,7 @@ const Post = ({ data }) => {
           }
         )}
       </article>
+      <RelatedPosts slug={pageContext.slug} />
     </Layout>
   )
 }
