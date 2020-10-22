@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
 import Layout from '../../components/layout'
 import brokenRobot from './images/broken-robot.png'
@@ -6,6 +6,16 @@ import brokenRobot from './images/broken-robot.png'
 import styles from './styles.module.css'
 
 const NotFoundPage = () => {
+  useEffect(() => {
+    if (window.dataLayer)
+      window.dataLayer.push({
+        event: 'custom',
+        eventCategory: 'www',
+        eventAction: 'PageNotFound',
+        eventLabel: window.location.href,
+      })
+  }, [])
+
   return (
     <Layout title="Page Not Found">
       <div className={`clear ${styles.container}`}>
