@@ -78,11 +78,8 @@ const Header = ({ headerClass }) => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/category/resources/"
-                  activeClassName="active"
-                >
-                  Resources
+                <Link to="/jobcast-faq/" activeClassName="active">
+                  FAQ
                 </Link>
               </li>
               <li className="visible-xs">
@@ -95,12 +92,6 @@ const Header = ({ headerClass }) => {
                   Contact
                 </Link>
               </li>
-              <li className="visible-xs">
-                <Link to="/jobcast-faq/" activeClassName="active">
-                  FAQ
-                </Link>
-              </li>
-
               <li className="visible-xs">
                 <Link to="/terms/" activeClassName="active">
                   Terms

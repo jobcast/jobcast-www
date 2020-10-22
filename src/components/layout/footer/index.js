@@ -95,11 +95,6 @@ const Footer = ({ footerClass }) => {
               </Link>
             </li>
             <li>
-              <Link to="/jobcast-faq/" activeClassName="active">
-                FAQ
-              </Link>
-            </li>
-            <li>
               <Link to="/terms/" activeClassName="active">
                 Terms
               </Link>
