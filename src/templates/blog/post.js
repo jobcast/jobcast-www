@@ -14,6 +14,7 @@ export const query = graphql`
       title
       publishDate(formatString: "MMMM Do, YYYY")
       author {
+        slug
         name
       }
       heroImage {
@@ -61,9 +62,10 @@ const Post = ({ data, pageContext }) => {
         </div>
         <div className={`${styles.date} clear font-12`}>
           <div className="pull-left">
-            <span className="author">
+            Posted by{' '}
+            <Link to={`/${data.contentfulBlogPost.author.slug}/`}>
               {data.contentfulBlogPost.author.name}
-            </span>
+            </Link>
           </div>
           <div className="pull-right">
             <span>{data.contentfulBlogPost.publishDate}</span>

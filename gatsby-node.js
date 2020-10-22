@@ -55,6 +55,34 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       }
     )
+
+  const authors = await graphql(`
+    query {
+      allContentfulPerson {
+        edges {
+          node {
+            slug
+            name
+          }
+        }
+      }
+    }
+  `)
+
+  for (const author of authors.data.allContentfulPerson.edges)
+    await createBlogListPages(
+      graphql,
+      actions,
+      author.node.slug,
+      author.node.name,
+      {
+        author: {
+          slug: {
+            eq: author.node.slug,
+          },
+        },
+      }
+    )
 }
 
 const createBlogListPages = async (
