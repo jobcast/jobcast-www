@@ -33,7 +33,7 @@ export const query = graphql`
   }
 `
 
-const Blog = ({ data }) => {
+const Post = ({ data }) => {
   const siteMatchRegex = new RegExp(
     '^' +
       data.site.siteMetadata.siteUrl
@@ -143,4 +143,4 @@ const Blog = ({ data }) => {
   )
 }
 
-export default Blog
+export default Post
