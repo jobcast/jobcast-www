@@ -21,7 +21,7 @@ const ContactPage = () => {
       >
         {/* The `form-name` hidden field is required to support form submissions in Netlify without JavaScript */}
         <input type="hidden" name="form-name" value="contact" />
-        <div class="hidden">
+        <div className="hidden">
           <label>
             Don’t fill this out if you're human:{' '}
             <input name="bot-field" />
