@@ -205,6 +205,10 @@ p {
   padding: 6px 15px;
 }
 
+.btn[disabled] {
+  background: #6c757d94
+}
+
 .color-white {
   color: #ffffff;
 }

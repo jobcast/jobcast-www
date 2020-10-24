@@ -26,6 +26,13 @@ export const query = graphql`
       body {
         json
       }
+      downloadType
+      download {
+        file {
+          url
+        }
+        title
+      }
     }
     site {
       siteMetadata {
@@ -48,6 +55,8 @@ const Post = ({ data, pageContext }) => {
     <Layout
       type={LayoutType.SPLIT}
       title={data.contentfulBlogPost.title}
+      downloadType={data.contentfulBlogPost.downloadType}
+      download={data.contentfulBlogPost.download}
     >
       <article>
         <img

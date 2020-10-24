@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
+import Download from '../download'
 import twitter from './images/twitter.png'
 
-const Sidebar = () => {
+const Sidebar = ({ downloadType, download }) => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulBlogCategory(sort: { fields: name, order: ASC }) {
@@ -20,6 +21,9 @@ const Sidebar = () => {
 
   return (
     <div>
+      {downloadType && download && (
+        <Download type={downloadType} download={download} />
+      )}
       <div>
         <div className="font-18 text-center">
           Jobcast is a powerful hiring app that engages candidates

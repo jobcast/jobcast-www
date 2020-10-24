@@ -1,0 +1,46 @@
+.indicates-required {
+  text-align: right;
+  font-size: 11px;
+  margin-right: 4%;
+}
+
+.asterix {
+  color: #e85c41;
+  font-size: 150%;
+  font-weight: normal;
+  position: relative;
+  top: 5px;
+}
+
+.form {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding: 10px 0 10px 3%;
+}
+
+.field-group {
+  clear: left;
+  position: relative;
+  width: 96%;
+  min-height: 50px;
+  padding-bottom: 10px;
+}
+
+.button-group {
+  clear: left;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-indent: 2%;
+}
