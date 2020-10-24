@@ -113,6 +113,8 @@ const Download = ({ type, download }) => {
           />
         </div>
         <div className={styles.buttonGroup}>
+          <input type="hidden" name="download" value="" />
+          <input type="hidden" name="downloadUrl" value="" />
           <button
             type="submit"
             className="btn btn-default btn-small"
