@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import downloadjs from 'downloadjs'
 
 import styles from './styles.module.css'
 
@@ -38,7 +39,7 @@ const Download = ({ type, download }) => {
       }),
     })
       .then(() => {
-        window.location.href = download.file.url
+        downloadjs(download.file.url)
       })
       .catch(error => {
         setSubmitting(false)
