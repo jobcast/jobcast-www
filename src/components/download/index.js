@@ -33,6 +33,8 @@ const Download = ({ type, download }) => {
         lastName,
         company,
         email,
+        download: download.title,
+        downloadUrl: download.file.url,
       }),
     })
       .then(() => {
