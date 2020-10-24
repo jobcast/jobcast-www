@@ -19,7 +19,7 @@ const ContactPage = () => {
         data-netlify="true"
         netlify-honeypot="bot-field"
       >
-        {/* The `form-name` hidden field is required to support form submissions in Netlify without JavaScript */}
+        {/* The `form-name` hidden field is required to support form handling in Netlify if form is generated client-side */}
         <input type="hidden" name="form-name" value="contact" />
         <div className="hidden">
           <label>
