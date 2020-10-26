@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../../components/layout'
 
 import './styles.css'
@@ -22,9 +23,7 @@ const PlansPage = () => {
       </p>
       <p>
         Need more than 500 jobs?{' '}
-        <a href="http://blog.bcjobs.ca/jobcast/contact-us/">
-          Please contact us!
-        </a>
+        <Link to="/contact-us/">Please contact us!</Link>
       </p>
       <p>All of our plans come with the following features:</p>
       <ul style={{ marginBottom: '30px' }}>
