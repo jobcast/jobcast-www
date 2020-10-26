@@ -19,13 +19,13 @@ const WebsiteIntegrationPage = () => {
       </p>
       <div className="text-center">
         <div className="margin-30">
-          <img alt="" src={leyf} />
+          <img alt="London Early Years Foundation" src={leyf} />
         </div>
         <div className="margin-30">
-          <img alt="" src={maryMargaret} />
+          <img alt="Mary Margaret" src={maryMargaret} />
         </div>
         <div className="margin-30">
-          <img alt="" src={chronos} />
+          <img alt="Chronos Oil and Gas" src={chronos} />
         </div>
       </div>
     </Layout>

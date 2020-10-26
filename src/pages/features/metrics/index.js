@@ -20,7 +20,7 @@ const MetricsPage = () => {
 
       <div className="text-center">
         <div className="margin-30">
-          <img src={consoleMetrics} />
+          <img src={consoleMetrics} alt="Jobcast Console Metrics" />
         </div>
       </div>
     </Layout>

@@ -33,10 +33,10 @@ const LanguagesPage = () => {
       </ul>
       <div className="text-center">
         <div className="margin-30">
-          <img src={spanish} />
+          <img src={spanish} alt="Spanish" />
         </div>
         <div className="margin-30">
-          <img src={russian} />
+          <img src={russian} alt="Russian" />
         </div>
       </div>
     </Layout>

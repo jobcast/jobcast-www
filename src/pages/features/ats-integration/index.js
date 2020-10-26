@@ -17,13 +17,13 @@ const AtsIntegration = () => {
       <p>Integrate easily with these (and more) ATS platforms</p>
       <div className="text-center">
         <div className="margin-30">
-          <img src={ats} />
+          <img src={ats} alt="Applicant Tracking System" />
         </div>
         <div className="margin-30">
-          <img src={jobcastConsole} />
+          <img src={jobcastConsole} alt="Jobcast Console" />
         </div>
         <div className="margin-30">
-          <img src={jobSyncCareerSite} />
+          <img src={jobSyncCareerSite} alt="Job Sync Career Site" />
         </div>
       </div>
     </Layout>

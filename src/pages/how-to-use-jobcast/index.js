@@ -367,7 +367,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare1e1407758983145}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -379,7 +379,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare2e1407758998599}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -390,7 +390,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare3e1407759014303}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -401,7 +401,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare4e1407759028633}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -411,7 +411,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare5e1407759042667}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -422,7 +422,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare8e1407759085655}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -434,7 +434,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare7e1407759069481}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>8 &#8211; Review your handy work:</p>
@@ -442,7 +442,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare8e1407759085655}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -453,7 +453,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare9e1407759106824}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -464,7 +464,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare10e1407759121495}
-            alt=""
+            alt="Auto-share"
           />
         </p>
         <p>
@@ -476,7 +476,7 @@ const HowToUseJobcastPage = () => {
           <img
             className="aligncenter"
             src={autoShare11e1407759136627}
-            alt=""
+            alt="Auto-share"
           />
         </p>
       </div>

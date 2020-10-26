@@ -17,13 +17,13 @@ const AutomatedJobSharingPage = () => {
       </p>
       <div className="text-center">
         <div className="margin-30">
-          <img src={mediscan} />
+          <img src={mediscan} alt="Mediscan" />
         </div>
         <div className="margin-30">
-          <img src={gfs} />
+          <img src={gfs} alt="Gordon Food Services" />
         </div>
         <div className="margin-30">
-          <img src={globalPathfinder} />
+          <img src={globalPathfinder} alt="Global Pathfinder" />
         </div>
       </div>
     </Layout>

@@ -21,10 +21,10 @@ const MobileCareerSitePage = () => {
       </p>
       <div className="text-center">
         <div className="margin-30">
-          <img src={logitech} />
+          <img src={logitech} alt="Logitech" />
         </div>
         <div className="margin-30">
-          <img src={earls} />
+          <img src={earls} alt="Earls Restaurants" />
         </div>
       </div>
     </Layout>

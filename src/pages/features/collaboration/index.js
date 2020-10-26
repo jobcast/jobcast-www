@@ -18,10 +18,10 @@ const CollaborationPage = () => {
       </p>
       <div className="text-center">
         <div className="margin-30">
-          <img src={manageJobs} />
+          <img src={manageJobs} alt="Manage Jobs" />
         </div>
         <div className="margin-30">
-          <img src={candidates} />
+          <img src={candidates} alt="Candidates" />
         </div>
       </div>
     </Layout>

@@ -23,13 +23,13 @@ const BrandedFacebookCareerPage = () => {
 
       <div className="text-center">
         <div className="margin-30">
-          <img alt="" src={lerf} />
+          <img alt="Long Early Years Foundation" src={lerf} />
         </div>
         <div className="margin-30">
-          <img alt="" src={nurses4Detroit} />
+          <img alt="Nurses 4 Detroit" src={nurses4Detroit} />
         </div>
         <div className="margin-30">
-          <img alt="" src={earlsWantsYou} />
+          <img alt="Earls Wants You" src={earlsWantsYou} />
         </div>
       </div>
     </Layout>
