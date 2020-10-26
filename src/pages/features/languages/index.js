@@ -1,6 +1,9 @@
 import React from 'react'
 import Layout from '../../../components/layout'
 
+import spanish from './images/spanish.jpg'
+import russian from './images/russian.jpg'
+
 const LanguagesPage = () => {
   return (
     <Layout heading="Post in 11 Languages">
@@ -30,10 +33,10 @@ const LanguagesPage = () => {
       </ul>
       <div className="text-center">
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_languages_2.jpg" />
+          <img src={spanish} />
         </div>
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_languages_3.jpg" />
+          <img src={russian} />
         </div>
       </div>
     </Layout>

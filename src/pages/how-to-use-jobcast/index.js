@@ -1,6 +1,40 @@
 import React from 'react'
 import Layout from '../../components/layout'
 
+import autoShare7e1407759069481 from './images/Auto-Share-7-e1407759069481.jpg'
+import autoShare8e1407759085655 from './images/Auto-Share-8-e1407759085655.jpg'
+import autoShare9e1407759106824 from './images/Auto-Share-9-e1407759106824.jpg'
+import autoShare10e1407759121495 from './images/Auto-Share-10-e1407759121495.jpg'
+import autoShare11e1407759136627 from './images/Auto-Share-11-e1407759136627.jpg'
+import costumizeWelcomeMessage5e1403554704119 from './images/Costumize-Welcome-Message-5-e1403554704119.jpg'
+import customizeBanner3be1403554305597 from './images/Customize-Banner-3b-e1403554305597.jpg'
+import customizeBanners1e1403554318710 from './images/Customize-Banners-1-e1403554318710.jpg'
+import customizeColours1a1e1403554331982 from './images/Customize-Colours-1a1-e1403554331982.jpg'
+import customizeColours1ae1403553494504 from './images/Customize-Colours-1a-e1403553494504.jpg'
+import customizeColours2e1403553594623 from './images/Customize-Colours-2-e1403553594623.jpg'
+import customizeColours3e1403553680845 from './images/Customize-Colours-3-e1403553680845.jpg'
+import customizeColours4e1403553691297 from './images/Customize-Colours-4-e1403553691297.jpg'
+import customizeWelcomeMessage1e1403554696728 from './images/Customize-Welcome-Message-1-e1403554696728.jpg'
+import customizeWelcomeMessage4ae1403554687297 from './images/Customize-Welcome-Message-4a-e1403554687297.jpg'
+import howToInstall1e1403552583616 from './images/How-to-Install-1-e1403552583616.jpg'
+import howToInstall2e1403552703261 from './images/How-to-Install-2-e1403552703261.jpg'
+import howToInstall3e1403552781677 from './images/How-to-Install-3-e1403552781677.jpg'
+import howToManageTabs11e1403552869495 from './images/How-to-manage-tabs-11-e1403552869495.jpg'
+import howToManageTabs21e1403552946314 from './images/How-to-manage-tabs-21-e1403552946314.jpg'
+import howToManageTabs31e1403553018931 from './images/How-to-manage-tabs-31-e1403553018931.jpg'
+import howToPostajob1e1403553157689 from './images/How-to-post-a-job-1-e1403553157689.jpg'
+import howToPostajob2e1403553292912 from './images/How-to-post-a-job-2-e1403553292912.jpg'
+import howToPostajob3e1403553369745 from './images/How-to-post-a-job-3-e1403553369745.jpg'
+import howToPostaJobe1403553223841 from './images/How-to-Post-a-Job-e1403553223841.jpg'
+import addYouTubeVideo1e1403554495858 from './images/Add-YouTube-Video-1-e1403554495858.jpg'
+import addYouTubeVideo2e1403554507847 from './images/Add-YouTube-Video-2-e1403554507847.jpg'
+import addYouTubeVideo3e1403554518516 from './images/Add-YouTube-Video-3-e1403554518516.jpg'
+import autoShare1e1407758983145 from './images/Auto-Share-1-e1407758983145.jpg'
+import autoShare2e1407758998599 from './images/Auto-Share-2-e1407758998599.jpg'
+import autoShare3e1407759014303 from './images/Auto-Share-3-e1407759014303.jpg'
+import autoShare4e1407759028633 from './images/Auto-Share-4-e1407759028633.jpg'
+import autoShare5e1407759042667 from './images/Auto-Share-5-e1407759042667.jpg'
+
 const HowToUseJobcastPage = () => {
   return (
     <Layout heading="How to Use Jobcast">
@@ -21,7 +55,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-Install-1-e1403552583616.jpg"
+            src={howToInstall1e1403552583616}
             alt="How-to-Install-1"
           />
         </p>
@@ -29,7 +63,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-Install-2-e1403552703261.jpg"
+            src={howToInstall2e1403552703261}
             alt="How-to-Install-2"
           />
         </p>
@@ -40,7 +74,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-Install-3-e1403552781677.jpg"
+            src={howToInstall3e1403552781677}
             alt="How-to-Install-3"
           />
         </p>
@@ -56,7 +90,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-manage-tabs-11-e1403552869495.jpg"
+            src={howToManageTabs11e1403552869495}
             alt="How-to-manage-tabs-1"
           />
         </p>
@@ -66,7 +100,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-manage-tabs-21-e1403552946314.jpg"
+            src={howToManageTabs21e1403552946314}
             alt="How-to-manage-tabs-2"
           />
         </p>
@@ -77,7 +111,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-manage-tabs-31-e1403553018931.jpg"
+            src={howToManageTabs31e1403553018931}
             alt="How-to-manage-tabs-3"
           />
         </p>
@@ -91,7 +125,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-post-a-job-1-e1403553157689.jpg"
+            src={howToPostajob1e1403553157689}
             alt="How-to-post-a-job-1"
           />
         </p>
@@ -99,7 +133,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-Post-a-Job-e1403553223841.jpg"
+            src={howToPostaJobe1403553223841}
             alt="How-to-Post-a-Job"
           />
         </p>
@@ -107,7 +141,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-post-a-job-2-e1403553292912.jpg"
+            src={howToPostajob2e1403553292912}
             alt="How-to-post-a-job-2"
           />
         </p>
@@ -126,7 +160,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/How-to-post-a-job-3-e1403553369745.jpg"
+            src={howToPostajob3e1403553369745}
             alt="How-to-post-a-job-3"
           />
         </p>
@@ -141,7 +175,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Colours-1a-e1403553494504.jpg"
+            src={customizeColours1ae1403553494504}
             alt="Customize-Colours-1a"
           />
         </p>
@@ -152,7 +186,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Colours-2-e1403553594623.jpg"
+            src={customizeColours2e1403553594623}
             alt="Customize-Colours-2"
           />
         </p>
@@ -160,7 +194,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Colours-3-e1403553680845.jpg"
+            src={customizeColours3e1403553680845}
             alt="Customize-Colours-3"
           />
         </p>
@@ -168,7 +202,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Colours-4-e1403553691297.jpg"
+            src={customizeColours4e1403553691297}
             alt="Customize-Colours-4"
           />
         </p>
@@ -191,7 +225,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Colours-1a1-e1403554331982.jpg"
+            src={customizeColours1a1e1403554331982}
             alt="Customize-Colours-1a"
           />
         </p>
@@ -202,7 +236,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Banners-1-e1403554318710.jpg"
+            src={customizeBanners1e1403554318710}
             alt="Customize-Banners-1"
           />
         </p>
@@ -213,7 +247,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Banner-3b-e1403554305597.jpg"
+            src={customizeBanner3be1403554305597}
             alt="Customize-Banner-3b"
           />
         </p>
@@ -235,7 +269,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Colours-1a1-e1403554331982.jpg"
+            src={customizeColours1a1e1403554331982}
             alt="Customize-Colours-1a"
           />
         </p>
@@ -246,7 +280,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Add-YouTube-Video-1-e1403554495858.jpg"
+            src={addYouTubeVideo1e1403554495858}
             alt="Add-YouTube-Video-1"
           />
         </p>
@@ -257,7 +291,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Add-YouTube-Video-2-e1403554507847.jpg"
+            src={addYouTubeVideo2e1403554507847}
             alt="Add-YouTube-Video-2"
           />
         </p>
@@ -268,7 +302,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Add-YouTube-Video-3-e1403554518516.jpg"
+            src={addYouTubeVideo3e1403554518516}
             alt="Add-YouTube-Video-3"
           />
         </p>
@@ -283,7 +317,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Colours-1a1-e1403554331982.jpg"
+            src={customizeColours1a1e1403554331982}
             alt="Customize-Colours-1a"
           />
         </p>
@@ -294,7 +328,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Welcome-Message-1-e1403554696728.jpg"
+            src={customizeWelcomeMessage1e1403554696728}
             alt="Customize-Welcome-Message-1"
           />
         </p>
@@ -302,7 +336,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Customize-Welcome-Message-4a-e1403554687297.jpg"
+            src={customizeWelcomeMessage4ae1403554687297}
             alt="Customize-Welcome-Message-4a"
           />
         </p>
@@ -313,7 +347,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/06/Costumize-Welcome-Message-5-e1403554704119.jpg"
+            src={costumizeWelcomeMessage5e1403554704119}
             alt="Costumize-Welcome-Message-5"
           />
         </p>
@@ -332,7 +366,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-1-e1407758983145.jpg"
+            src={autoShare1e1407758983145}
             alt=""
           />
         </p>
@@ -344,7 +378,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-2-e1407758998599.jpg"
+            src={autoShare2e1407758998599}
             alt=""
           />
         </p>
@@ -355,7 +389,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-3-e1407759014303.jpg"
+            src={autoShare3e1407759014303}
             alt=""
           />
         </p>
@@ -366,7 +400,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-4-e1407759028633.jpg"
+            src={autoShare4e1407759028633}
             alt=""
           />
         </p>
@@ -376,7 +410,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-5-e1407759042667.jpg"
+            src={autoShare5e1407759042667}
             alt=""
           />
         </p>
@@ -387,7 +421,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-8-e1407759085655.jpg"
+            src={autoShare8e1407759085655}
             alt=""
           />
         </p>
@@ -399,7 +433,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-7-e1407759069481.jpg"
+            src={autoShare7e1407759069481}
             alt=""
           />
         </p>
@@ -407,7 +441,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-8-e1407759085655.jpg"
+            src={autoShare8e1407759085655}
             alt=""
           />
         </p>
@@ -418,7 +452,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-9-e1407759106824.jpg"
+            src={autoShare9e1407759106824}
             alt=""
           />
         </p>
@@ -429,7 +463,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-10-e1407759121495.jpg"
+            src={autoShare10e1407759121495}
             alt=""
           />
         </p>
@@ -441,7 +475,7 @@ const HowToUseJobcastPage = () => {
         <p>
           <img
             className="aligncenter"
-            src="http://blog.bcjobs.ca/jobcast/wp-content/uploads/2014/08/Auto-Share-11-e1407759136627.jpg"
+            src={autoShare11e1407759136627}
             alt=""
           />
         </p>

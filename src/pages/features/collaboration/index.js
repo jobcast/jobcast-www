@@ -1,6 +1,9 @@
 import React from 'react'
 import Layout from '../../../components/layout'
 
+import manageJobs from './images/manage-jobs.jpg'
+import candidates from './images/candidates.jpg'
+
 const CollaborationPage = () => {
   return (
     <Layout heading="Real Time Collaboration">
@@ -15,10 +18,10 @@ const CollaborationPage = () => {
       </p>
       <div className="text-center">
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_measure_2.jpg" />
+          <img src={manageJobs} />
         </div>
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_measure_3.jpg" />
+          <img src={candidates} />
         </div>
       </div>
     </Layout>

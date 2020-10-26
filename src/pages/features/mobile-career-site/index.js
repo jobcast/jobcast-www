@@ -1,6 +1,9 @@
 import React from 'react'
 import Layout from '../../../components/layout'
 
+import logitech from './images/logitech.jpg'
+import earls from './images/earls.jpg'
+
 const MobileCareerSitePage = () => {
   return (
     <Layout heading="Mobile Career Site">
@@ -18,10 +21,10 @@ const MobileCareerSitePage = () => {
       </p>
       <div className="text-center">
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_mobile_1.jpg?v=1" />
+          <img src={logitech} />
         </div>
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_mobile_2.jpg?v=1" />
+          <img src={earls} />
         </div>
       </div>
     </Layout>

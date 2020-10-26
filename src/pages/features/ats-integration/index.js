@@ -1,5 +1,8 @@
 import React from 'react'
 import Layout from '../../../components/layout'
+import ats from './images/ats.jpg'
+import jobcastConsole from './images/jobcast-console.jpg'
+import jobSyncCareerSite from './images/job-sync-career-site.jpg'
 
 const AtsIntegration = () => {
   return (
@@ -14,13 +17,13 @@ const AtsIntegration = () => {
       <p>Integrate easily with these (and more) ATS platforms</p>
       <div className="text-center">
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/features_image_ats.jpg" />
+          <img src={ats} />
         </div>
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_sync_1.jpg" />
+          <img src={jobcastConsole} />
         </div>
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_sync_2.jpg" />
+          <img src={jobSyncCareerSite} />
         </div>
       </div>
     </Layout>

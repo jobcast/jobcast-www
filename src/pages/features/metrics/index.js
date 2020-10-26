@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../../../components/layout'
 
+import consoleMetrics from './images/console-metrics.jpg'
+
 const MetricsPage = () => {
   return (
     <Layout heading="Detailed Metrics">
@@ -18,7 +20,7 @@ const MetricsPage = () => {
 
       <div className="text-center">
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_measure_1.jpg" />
+          <img src={consoleMetrics} />
         </div>
       </div>
     </Layout>

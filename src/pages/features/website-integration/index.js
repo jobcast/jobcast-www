@@ -1,6 +1,10 @@
 import React from 'react'
 import Layout from '../../../components/layout'
 
+import leyf from './images/london-early-years-foundation.jpg'
+import maryMargaret from './images/mary-margaret-network.jpg'
+import chronos from './images/chronos-oil-and-gas.jpg'
+
 const WebsiteIntegrationPage = () => {
   return (
     <Layout heading="Website Integration">
@@ -15,22 +19,13 @@ const WebsiteIntegrationPage = () => {
       </p>
       <div className="text-center">
         <div className="margin-30">
-          <img
-            alt=""
-            src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_widget_2.jpg?v=1"
-          />
+          <img alt="" src={leyf} />
         </div>
         <div className="margin-30">
-          <img
-            alt=""
-            src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_widget_1.jpg"
-          />
+          <img alt="" src={maryMargaret} />
         </div>
         <div className="margin-30">
-          <img
-            alt=""
-            src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_widget_3.jpg"
-          />
+          <img alt="" src={chronos} />
         </div>
       </div>
     </Layout>

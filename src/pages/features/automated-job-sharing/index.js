@@ -1,6 +1,10 @@
 import React from 'react'
 import Layout from '../../../components/layout'
 
+import mediscan from './images/mediscan.jpg'
+import gfs from './images/gordon-food-services.jpg'
+import globalPathfinder from './images/global-pathfinder.jpg'
+
 const AutomatedJobSharingPage = () => {
   return (
     <Layout heading="Automated Job Sharing">
@@ -13,13 +17,13 @@ const AutomatedJobSharingPage = () => {
       </p>
       <div className="text-center">
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_sharing_1.jpg" />
+          <img src={mediscan} />
         </div>
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_sharing_2.jpg" />
+          <img src={gfs} />
         </div>
         <div className="margin-30">
-          <img src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_sharing_3.jpg" />
+          <img src={globalPathfinder} />
         </div>
       </div>
     </Layout>

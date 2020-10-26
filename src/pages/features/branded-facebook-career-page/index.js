@@ -1,6 +1,10 @@
 import React from 'react'
 import Layout from '../../../components/layout'
 
+import lerf from './images/london-early-years-foundation.jpg'
+import nurses4Detroit from './images/nurses-4-detroit.jpg'
+import earlsWantsYou from './images/earls-wants-you.jpg'
+
 const BrandedFacebookCareerPage = () => {
   return (
     <Layout heading="Branded Facebook Career Page">
@@ -19,22 +23,13 @@ const BrandedFacebookCareerPage = () => {
 
       <div className="text-center">
         <div className="margin-30">
-          <img
-            alt=""
-            src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_customize_1.jpg?v=1"
-          />
+          <img alt="" src={lerf} />
         </div>
         <div className="margin-30">
-          <img
-            alt=""
-            src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_customize_2.jpg?v=1"
-          />
+          <img alt="" src={nurses4Detroit} />
         </div>
         <div className="margin-30">
-          <img
-            alt=""
-            src="http://blog.bcjobs.ca/jobcast/wp-content/themes/jobcast.net_2012/images/screenshot_customize_3.jpg?v=1"
-          />
+          <img alt="" src={earlsWantsYou} />
         </div>
       </div>
     </Layout>
