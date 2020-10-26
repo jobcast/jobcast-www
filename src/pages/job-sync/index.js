@@ -15,7 +15,7 @@ const JobSyncPage = () => {
         <img
           className="hidden-xs alignright wp-image-7452 size-full"
           src={jobSync}
-          alt=""
+          alt="Job Sync"
           width="427"
           height="663"
         />

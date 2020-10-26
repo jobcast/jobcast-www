@@ -62,7 +62,7 @@ const Sidebar = ({ downloadType, download }) => {
                   marginLeft: '2px',
                   verticalAlign: '-2px',
                 }}
-                alt=""
+                alt="Twitter"
                 src={twitter}
               />
             </a>
