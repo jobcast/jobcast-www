@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../../components/layout'
 
 const TutorialsPage = () => {
@@ -17,21 +18,19 @@ const TutorialsPage = () => {
       </p>
       <p style={{ textAlign: 'center' }}>
         Prefer screenshots? Learn how to:{' '}
-        <a href="http://www.jobcast.net/jobcast-faq/#faq-colours">
+        <Link to="/jobcast-faq/#faq-colours">
           Change Your Brand Colours
-        </a>{' '}
-        &nbsp;&nbsp;|&nbsp;&nbsp;{' '}
-        <a href="http://www.jobcast.net/jobcast-faq/#faq-banners">
-          Add Banners
-        </a>{' '}
-        &nbsp;&nbsp;|&nbsp;&nbsp;{' '}
-        <a href="http://www.jobcast.net/jobcast-faq/#faq-youtube">
+        </Link>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <Link to="/jobcast-faq/#faq-banners">Add Banners</Link>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <Link to="/jobcast-faq/#faq-youtube">
           Add a Youtube Video
-        </a>{' '}
-        &nbsp;&nbsp;|&nbsp;&nbsp;{' '}
-        <a href="http://www.jobcast.net/jobcast-faq/#faq-welcome">
+        </Link>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <Link to="/jobcast-faq/#faq-welcome">
           Add a Welcome Message
-        </a>
+        </Link>
       </p>
       <hr style={{ margin: '15px 0' }} />
       <h2 style={{ textAlign: 'center' }}>Add a Team Member</h2>
@@ -59,9 +58,7 @@ const TutorialsPage = () => {
       </p>
       <p style={{ textAlign: 'center' }}>
         Prefer screenshots? Learn how to:{' '}
-        <a href="http://www.jobcast.net/jobcast-faq/#faq-jobs">
-          Post a Job
-        </a>
+        <Link to="/jobcast-faq/#faq-jobs">Post a Job</Link>
       </p>
       <hr style={{ margin: '15px 0' }} />
       <h2 style={{ textAlign: 'center' }}>Automation</h2>
@@ -77,9 +74,7 @@ const TutorialsPage = () => {
       </p>
       <p style={{ textAlign: 'center' }}>
         Prefer screenshots? Learn how to:{' '}
-        <a href="http://www.jobcast.net/jobcast-faq/#faq-share">
-          Automate Your Jobs
-        </a>
+        <Link to="/jobcast-faq/#faq-share">Automate Your Jobs</Link>
       </p>
     </Layout>
   )

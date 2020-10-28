@@ -85,13 +85,13 @@ const TermsPage = () => {
       </h2>
       <p>
         Effective May 25, 2018, Jobcast has updated its{' '}
-        <a href="https://www.jobcast.net/privacy">Privacy Policy</a>{' '}
-        to reflect our ongoing efforts to build our app on a
-        foundation of respect for user privacy and our recent work to
-        comply with Europe’s new privacy law, the General Data
-        Protection Regulation (GDPR). While the GDPR applies
-        specifically to people located in European Union member
-        states, we’re implementing product changes for all users.
+        <Link to="/privacy/">Privacy Policy</Link> to reflect our
+        ongoing efforts to build our app on a foundation of respect
+        for user privacy and our recent work to comply with Europe’s
+        new privacy law, the General Data Protection Regulation
+        (GDPR). While the GDPR applies specifically to people located
+        in European Union member states, we’re implementing product
+        changes for all users.
       </p>
       <p>
         4.1. The Data (jobs, resumes,…) that you collect through your
