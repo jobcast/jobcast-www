@@ -1,6 +1,2 @@
 # Redirect default Netlify subdomain
-http://jobcast-www.netlify.app/* https://www.jobcast.net/:splat 301!
 https://jobcast-www.netlify.app/* https://www.jobcast.net/:splat 301!
-
-# Force HTTPS
-http://www.jobcast.net/* https://www.jobcast.net/:splat 301!
