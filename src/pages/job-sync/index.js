@@ -10,8 +10,8 @@ const JobSyncPage = () => {
         Job Sync creates a seamless job application process both for
         you and job seekers by connecting your ATS with Jobcast.
       </p>
+      <h2>What is Job Sync?</h2>
       <p>
-        <h2>What is Job Sync?</h2>
         <img
           className="hidden-xs alignright wp-image-7452 size-full"
           src={jobSync}
