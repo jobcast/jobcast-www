@@ -4,6 +4,8 @@ import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import Download from '../download'
 import twitter from './images/twitter.png'
 
+import styles from './styles.module.css'
+
 const Sidebar = ({ downloadType, download }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -70,7 +72,7 @@ const Sidebar = ({ downloadType, download }) => {
         </div>
       </div>
 
-      <div className="widget_categories">
+      <div className={styles.categories}>
         <h3>Categories</h3>
         <ul>
           {data.allContentfulBlogCategory.edges.map(({ node }) => (
