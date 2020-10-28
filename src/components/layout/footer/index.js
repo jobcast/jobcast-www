@@ -21,7 +21,7 @@ const Footer = ({ footerClass }) => {
           <ul className="margin-0">
             <li>
               <a
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/company/jobcast-net"
                 target="_blank"
                 title="Jobcast on LinkedIn"
@@ -36,7 +36,7 @@ const Footer = ({ footerClass }) => {
             </li>
             <li>
               <a
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://twitter.com/jobcastnet"
                 target="_blank"
                 title="Jobcast on Twitter"
@@ -51,7 +51,7 @@ const Footer = ({ footerClass }) => {
             </li>
             <li>
               <a
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://www.facebook.com/jobcastnet"
                 target="_blank"
                 title="Jobcast on Facebook"
@@ -66,7 +66,7 @@ const Footer = ({ footerClass }) => {
             </li>
             <li>
               <a
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href="https://www.youtube.com/channel/UCHov9o2-HsiPV2Awp2ke-TA"
                 target="_blank"
                 title="Jobcast on Youtube"
