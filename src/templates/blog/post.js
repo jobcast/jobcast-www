@@ -134,7 +134,7 @@ const Post = ({ data, pageContext }) => {
                     <a
                       href={node.data.uri}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                     >
                       {node.content[0].value}
                     </a>
