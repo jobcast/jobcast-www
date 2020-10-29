@@ -123,6 +123,22 @@ const Post = ({ data, pageContext }) => {
                       ></iframe>
                     </span>
                   )
+                if (
+                  node.data.uri.includes(
+                    'www.slideshare.net/slideshow/embed_code'
+                  )
+                )
+                  return (
+                    <iframe
+                      src={node.data.uri}
+                      width="595"
+                      height="485"
+                      frameBorder="0"
+                      marginWidth="0"
+                      marginHeight="0"
+                      scrolling="no"
+                    ></iframe>
+                  )
                 else if (node.content.length)
                   return siteMatchRegex.test(node.data.uri) ? (
                     <Link
