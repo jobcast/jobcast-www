@@ -38,6 +38,11 @@
   border-bottom: 1px solid #d4d4d4;
 }
 
+.focused {
+  color: #fff;
+  background-color: #00a6c3 !important;
+}
+
 @media only screen and (max-width: 990px) {
   .search-container {
     display: none;

@@ -12,6 +12,7 @@ import styles from './styles.module.css'
 const Autocomplete = connectAutoComplete(
   ({ hits, currentRefinement, refine }) => {
     const [isActive, setIsActive] = useState(false)
+    const [focusedIndex, setFocusedIndex] = useState(-1)
 
     // technique to close search results when clicking outside of our component: https://stackoverflow.com/a/50558760/188740
     const containerRef = useRef()
@@ -24,6 +25,38 @@ const Autocomplete = connectAutoComplete(
       return () =>
         document.removeEventListener('mousedown', handleClickOutside)
     }, [])
+
+    const dropdownRef = useRef()
+    const handleKeyDown = e => {
+      if (![38, 40, 13].includes(e.keyCode)) return
+
+      e.preventDefault()
+
+      switch (e.keyCode) {
+        case 38: // up
+          if (focusedIndex < 0) return
+          setFocusedIndex(i => i - 1)
+          break
+        case 40: // down
+          if (
+            focusedIndex >=
+            dropdownRef.current.childElementCount - 1
+          )
+            return
+          setFocusedIndex(i => i + 1)
+          break
+        case 13: // enter
+          dropdownRef.current.children[focusedIndex].click()
+          break
+        default:
+          break
+      }
+    }
+
+    const handleChange = e => {
+      setFocusedIndex(-1)
+      refine(e.target.value)
+    }
 
     return (
       <div
@@ -38,13 +71,23 @@ const Autocomplete = connectAutoComplete(
               type="search"
               placeholder="Search"
               value={currentRefinement}
-              onChange={e => refine(e.target.value)}
+              onChange={handleChange}
               onFocus={() => setIsActive(true)}
+              onKeyDown={handleKeyDown}
             />
             {isActive && !!currentRefinement.trim() && !!hits.length && (
-              <div className={styles.autocompleteItems}>
-                {hits.slice(0, 5).map(hit => (
-                  <Link to={hit.url} key={hit.objectID}>
+              <div
+                className={styles.autocompleteItems}
+                ref={dropdownRef}
+              >
+                {hits.slice(0, 5).map((hit, i) => (
+                  <Link
+                    to={hit.url}
+                    key={hit.objectID}
+                    className={
+                      focusedIndex === i ? styles.focused : ''
+                    }
+                  >
                     <Highlight
                       hit={hit}
                       attribute="title"
