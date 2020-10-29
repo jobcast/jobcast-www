@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { BLOCKS, INLINES } from '@contentful/rich-text-types'
