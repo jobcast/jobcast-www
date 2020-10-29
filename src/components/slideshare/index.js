@@ -1,8 +1,9 @@
 import React from 'react'
 
-const SlideShare = ({ src }) => {
+const SlideShare = ({ title, src }) => {
   return (
     <iframe
+      title={title}
       src={src}
       width="595"
       height="485"

@@ -111,7 +111,15 @@ const Post = ({ data, pageContext }) => {
                     'www.slideshare.net/slideshow/embed_code'
                   )
                 )
-                  return <SlideShare src={node.data.uri} />
+                  return (
+                    <SlideShare
+                      title={
+                        node.content.find(c => c.nodeType === 'text')
+                          .value
+                      }
+                      src={node.data.uri}
+                    />
+                  )
 
                 if (!node.content.length) return
 
