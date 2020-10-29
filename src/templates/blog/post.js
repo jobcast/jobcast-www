@@ -4,6 +4,8 @@ import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout, { LayoutType } from '../../components/layout'
 import RelatedPosts from '../../components/related-posts'
+import YouTube from '../../components/youtube'
+import SlideShare from '../../components/slideshare'
 
 import styles from './styles.module.css'
 
@@ -95,50 +97,20 @@ const Post = ({ data, pageContext }) => {
                 if (node.data.uri.includes('youtube.com/embed'))
                   // https://www.contentfulcommunity.com/t/embed-youtube-or-vimeo-video-directly-into-rich-text-content-type/2639/3
                   return (
-                    <span
-                      style={{
-                        paddingBottom: '56.25%',
-                        position: 'relative',
-                        display: 'block',
-                        width: '100%',
-                      }}
-                    >
-                      <iframe
-                        style={{
-                          height: '100%',
-                          width: '100%',
-                          position: 'absolute',
-                          top: '0',
-                          left: '0',
-                        }}
-                        title={
-                          node.content.find(
-                            c => c.nodeType === 'text'
-                          ).value
-                        }
-                        src={node.data.uri}
-                        frameBorder="0"
-                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </span>
+                    <YouTube
+                      title={
+                        node.content.find(c => c.nodeType === 'text')
+                          .value
+                      }
+                      src={node.data.uri}
+                    />
                   )
                 if (
                   node.data.uri.includes(
                     'www.slideshare.net/slideshow/embed_code'
                   )
                 )
-                  return (
-                    <iframe
-                      src={node.data.uri}
-                      width="595"
-                      height="485"
-                      frameBorder="0"
-                      marginWidth="0"
-                      marginHeight="0"
-                      scrolling="no"
-                    ></iframe>
-                  )
+                  return <SlideShare src={node.data.uri} />
                 else if (node.content.length)
                   return siteMatchRegex.test(node.data.uri) ? (
                     <Link
