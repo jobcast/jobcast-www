@@ -105,28 +105,52 @@ const Post = ({ data, pageContext }) => {
                       src={node.data.uri}
                     />
                   )
+
                 if (
                   node.data.uri.includes(
                     'www.slideshare.net/slideshow/embed_code'
                   )
                 )
                   return <SlideShare src={node.data.uri} />
-                else if (node.content.length)
-                  return siteMatchRegex.test(node.data.uri) ? (
+
+                if (!node.content.length) return
+
+                if (siteMatchRegex.test(node.data.uri))
+                  return (
                     <Link
                       to={node.data.uri.replace(siteMatchRegex, '')}
                     >
                       {node.content[0].value}
                     </Link>
-                  ) : (
-                    <a
-                      href={node.data.uri}
-                      target="_blank"
-                      rel="noopener"
+                  )
+
+                if (
+                  node.data.uri.startsWith(
+                    'http://blog.bcjobs.ca/jobcast'
+                  )
+                )
+                  return (
+                    <Link
+                      to={
+                        node.data.uri.replace(
+                          'http://blog.bcjobs.ca/jobcast',
+                          ''
+                        ) || '/'
+                      }
                     >
                       {node.content[0].value}
-                    </a>
+                    </Link>
                   )
+
+                return (
+                  <a
+                    href={node.data.uri}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    {node.content[0].value}
+                  </a>
+                )
               },
             },
             renderText: text =>
