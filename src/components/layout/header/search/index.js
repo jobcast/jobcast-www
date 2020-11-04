@@ -75,7 +75,7 @@ const Autocomplete = connectAutoComplete(
               onFocus={() => setIsActive(true)}
               onKeyDown={handleKeyDown}
             />
-            {isActive && !!currentRefinement.trim() && !!hits.length && (
+            {isActive && !!hits.length && (
               <div
                 className={styles.autocompleteItems}
                 ref={dropdownRef}
@@ -105,13 +105,35 @@ const Autocomplete = connectAutoComplete(
 )
 
 const Search = () => {
+  // Implement a proxy to prevent empty searches for initial display: https://www.algolia.com/doc/guides/building-search-ui/going-further/conditional-requests/js/#implementing-a-proxy
+  const algoliaClient = algoliasearch(
+    process.env.GATSBY_ALGOLIA_APP_ID,
+    process.env.GATSBY_ALGOLIA_SEARCH_KEY
+  )
+  const searchClient = {
+    search: requests => {
+      // In some cases, such as when the end user clicks on a refinementList, this can trigger multiple requests.
+      // We therefore need to make sure that every query is empty before we intercept the function call.
+      if (requests.every(({ params }) => !params.query)) {
+        return Promise.resolve({
+          results: requests.map(() => ({
+            hits: [],
+            nbHits: 0,
+            nbPages: 0,
+            page: 0,
+            processingTimeMS: 0,
+          })),
+        })
+      }
+
+      return algoliaClient.search(requests)
+    },
+  }
+
   return (
     <InstantSearch
       indexName="jobcast-www"
-      searchClient={algoliasearch(
-        process.env.GATSBY_ALGOLIA_APP_ID,
-        process.env.GATSBY_ALGOLIA_SEARCH_KEY
-      )}
+      searchClient={searchClient}
     >
       <Autocomplete />
     </InstantSearch>
