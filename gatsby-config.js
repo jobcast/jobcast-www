@@ -17,12 +17,6 @@ module.exports = {
         includeInDevelopment: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-intercom`,
-      options: {
-        appId: process.env.INTERCOM_WORKSPACE_ID,
-      },
-    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
