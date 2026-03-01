@@ -1,6 +1,7 @@
 Static [Gatsby](https://www.gatsbyjs.com/) site generator for https://www.jobcast.net
 
 ## Setup
+* This project requires **Node 16**. If using nvm: `nvm use 16`
 * Create `.env.development` at root and populate environment variables:
 ```
 GATSBY_GRAPHQL_IDE=playground
@@ -13,8 +14,12 @@ GATSBY_ALGOLIA_INDEX_NAME={value}
 ```
 * Install dependencies
 ```shell
-npm install
+npm ci
 ```
+> **Apple Silicon (M-series) Macs:** `sharp` does not have prebuilt binaries for arm64 at this version and cannot compile from source. Since this project does not use Gatsby image processing, skip native install scripts:
+> ```shell
+> npm ci --ignore-scripts
+> ```
 
 ## Develop
 ```shell
