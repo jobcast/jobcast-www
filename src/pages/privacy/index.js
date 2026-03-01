@@ -54,6 +54,48 @@ const PrivacyPage = () => {
         your Facebook page or Group name. We will never publish
         through your third-party account without your permission.
       </p>
+      <h4>Use of Facebook / Meta Platform Data</h4>
+      <p>
+        Jobcast may integrate with Meta platforms, including Facebook
+        Login and the Facebook Graph API, to provide authentication and
+        related functionality.
+      </p>
+      <p>
+        When a user authenticates using Facebook Login, we may receive
+        limited information from Facebook, which can include:
+      </p>
+      <ul>
+        <li><p>Name</p></li>
+        <li><p>Email address</p></li>
+        <li><p>Facebook user ID</p></li>
+        <li><p>Profile picture (if authorized)</p></li>
+      </ul>
+      <p>We use this information solely to:</p>
+      <ul>
+        <li><p>Authenticate users</p></li>
+        <li><p>Create or link user accounts</p></li>
+        <li><p>Provide requested functionality</p></li>
+      </ul>
+      <p>We do not sell Facebook-derived data.</p>
+      <p>
+        We do not share Facebook user data with third parties except as
+        necessary to provide our services or as required by law.
+      </p>
+      <p>
+        All Facebook data is handled in accordance with Meta Platform
+        Terms and Meta Platform Policies.
+      </p>
+      <p>
+        Jobcast also uses the Facebook Graph API to publish posts to
+        Facebook Pages and Facebook user profiles on behalf of users
+        and companies who explicitly authorize this functionality. Posts
+        are only created at the direction of the user.
+      </p>
+      <p>
+        Users may revoke all Facebook permissions at any time through
+        their Facebook account settings or by disconnecting their
+        Facebook account within Jobcast.
+      </p>
       <h4>Information Disclosure</h4>
       <p>
         Jobcast won’t transfer information about you to third parties
