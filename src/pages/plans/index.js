@@ -82,7 +82,7 @@ const PlansPage = () => {
         </div>
         <p style={{ textAlign: 'center', marginTop: '15px' }}>
           <strong>
-            Already have an ATS? No problem! Add Job Synch for $129!
+            Already have an ATS? No problem! Add Job Sync for $129!
             All your jobs, no extra effort.
           </strong>
         </p>
